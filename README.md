@@ -161,7 +161,7 @@ src
 
 #### ERD Model
 
-![Garden_Modeling_ERD](https://user-images.githubusercontent.com/52892348/83982553-77e26100-a8f5-11ea-8a94-db5375351819.png)
+![Garden_Modeling_ERD](https://user-images.githubusercontent.com/52892348/83982661-6e0d2d80-a8f6-11ea-925b-bcefe8d75a92.png)
 
 <br>
 
