@@ -35,10 +35,12 @@ _The **Garden Modeling** MVP will allow users to create accounts, save items to 
 
 ### Goals
 
-- _Create a working API that takes in and is able to add all relevant items._
-- _Create CRUD application that can display, modify, delete, or add new plants depending on user permissions._
-- _Implement AUTH that allows users to add, edit or remove items from their own "gardens"._
-- _Allow users to save information to their "profiles"._
+- _Create a full-stack app that takes in user permissions in order to access the app's main features._
+- _Apply CRUD that can display, modify, delete, or add new gardens/plants depending on user access level._
+- _Implement AUTH._
+- _Write clean, scalable code._
+- _Create simple, reusable components._
+
 
 <br>
 
@@ -48,8 +50,7 @@ _The **Garden Modeling** MVP will allow users to create accounts, save items to 
 | :--------------: | :----------------------------------------- |
 |      React       | _To build out and create a front end for this app._ |
 |   React Router   | _To be able to create routes and leverage already created apps built by Rails._ |
-|    Bootstrap     | _To style this app using the Bootstrap library._ |
-|   Ruby on Rails  | _To create back end server side rendering via Rails, ._ |
+|   Ruby on Rails  | _To create server (API, routes, controllers, models) via Rails._ |
 
 <br>
 
@@ -57,35 +58,29 @@ _The **Garden Modeling** MVP will allow users to create accounts, save items to 
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views.
+> All Wireframes can be seen here: https://www.figma.com/file/V1q6klSBamEaxQRIYoRZO0/Garden-Modeling
 
-![Dummy Link](url)
+![Home](https://user-images.githubusercontent.com/52892348/83982348-27b6cf00-a8f4-11ea-961d-59142dddb0f2.png)
 
-- Desktop Landing
+![Nursery](https://user-images.githubusercontent.com/52892348/83982362-3c936280-a8f4-11ea-9ace-f7082c4c8e57.png)
 
-![Dummy Link](url)
+![NurseryItem](https://user-images.githubusercontent.com/52892348/83982363-4b7a1500-a8f4-11ea-9075-b2ba38d06727.png)
 
-- Desktop View Nursery (Index)
+![Add/Edit](https://user-images.githubusercontent.com/52892348/83982393-6a78a700-a8f4-11ea-9406-7a186639ba5b.png)
 
-![Dummy Link](url)
+![About](https://user-images.githubusercontent.com/52892348/83982409-77959600-a8f4-11ea-8c1a-6d21d0a9b9bf.png)
 
-- Desktop My Garden
+![Sign In](https://user-images.githubusercontent.com/52892348/83982417-8b40fc80-a8f4-11ea-9d98-b281d4d0317c.png)
 
-![Dummy Link](url)
+![Sign Up](https://user-images.githubusercontent.com/52892348/83982420-8e3bed00-a8f4-11ea-9577-7249f8068b3c.png)
 
-- Desktop Add Garden
+![Nursery Item Tablet](https://user-images.githubusercontent.com/52892348/83982431-a7dd3480-a8f4-11ea-9210-3b2379bb7d1a.png)
 
-![Dummy Link](url)
+![Add/Edit Tablet](https://user-images.githubusercontent.com/52892348/83982435-aca1e880-a8f4-11ea-9fc7-f7b0897b1187.png)
 
-- Desktop Edit Garden
+![Home Mobile](https://user-images.githubusercontent.com/52892348/83982439-b297c980-a8f4-11ea-9ea6-ee5596cdcf73.png)
 
-![Dummy Link](url)
-
-- Tablet View Nursery (Index)
-
-![Dummy Link](url)
-
-- Mobile View Nursery (Index)
+![Add/Edit Mobile](https://user-images.githubusercontent.com/52892348/83982443-b62b5080-a8f4-11ea-9e5d-7a46d8f6b0a3.png)
 
 #### Component Tree
 
@@ -107,9 +102,14 @@ src
       |__ Nursery.jsx
       |__ NurseryCard.jsx
       |__ NurseryIndex.jsx
+      |__ SignUp.jsx
+      |__ SignIn.jsx
+      |__ SignOut.jsx
       |__ MyGarden.jsx
       |__ AddGarden.jsx
       |__ EditGarden.jsx
+      |__ AddPlant.jsx
+      |__ EditPlant.jsx
 
 ```
 
@@ -127,6 +127,10 @@ src
 |    MyGarden    | functional |   y   |   y   | _This component will allow users to view their saved items._ |
 |    AddGarden    | functional |   y   |   y   | _This component will allow users to add a new garden._ |
 |    EditGarden   | functional |   y   |   y   | _This component will allow users to add new items to their garden, change the name of their garden, or add any relevant notes._ |
+|    SignUp   | functional |   y   |   n   | _This component will allow the user to sign up._ |
+|    SignIn   | functional |   y   |   n   | _This component will allow the user to sign in._ |
+|    SignOut   | functional |   y   |   n   | _This componenet will allow the user to sign out._ |
+
 
 #### Component Estimates
 
@@ -137,13 +141,13 @@ src
 | Header    |    L     |     3 hrs      |     TK hrs     |    TK    |
 | Footer |    L     |     3 hrs      |     TK hrs     |     TK     |
 | Layout |    H     |     2 hrs      |     TK hrs     |     TK     |
-| Styling for Layout |    L     |     3 hrs      |     TK hrs     |     TK     |
+| Styling for Layout |    L     |     4 hrs      |     TK hrs     |     TK     |
 | Home |    H     |     4 hrs      |     TK hrs     |     TK     |
 | Nursery |    M     |     6 hrs      |     TK hrs     |     TK     |
 | NurseryCard |    H     |     5 hrs      |     TK hrs     |     TK     |
 | NurseryIndex |    M     |     4 hrs      |     TK hrs     |     TK     |
-| Styling for Home Elements |    L     |     4 hrs      |     TK hrs     |     TK     |
-| Create CRUD Actions for UserGarden |    H     |     8 hrs      |     TK hrs     |     TK     |
+| Styling for Home Elements |    L     |     10 hrs      |     TK hrs     |     TK     |
+| Create CRUD Actions for UserGarden |    H     |     6 hrs      |     TK hrs     |     TK     |
 | MyGarden |    H     |     5 hrs      |     TK hrs     |     TK     |
 | AddGarden |    H     |     5 hrs      |     TK hrs     |     TK     |
 | EditGarden |    H     |     6 hrs      |     TK hrs     |     TK     |
@@ -157,22 +161,23 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model.
+![Garden_Modeling_ERD](https://user-images.githubusercontent.com/52892348/83982553-77e26100-a8f5-11ea-8a94-db5375351819.png)
 
 <br>
 
 ***
 
 ## Post-MVP
-> Incorp. external weather API to give users a reference for when the last frost of the season is. 
+> Create an image drop so that users can also visually plan out garden beds using a grid system, grouping plants together by planting, frost and soil type. 
+> Incorp. external weather API to update all relevant information and add new plants to the API. 
 > Incorp. alerts for users (to alert users when they should water, look out for frosts or unexpected weather).
 
 ***
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+> TK
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution, if you'd like.
+> TK
