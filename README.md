@@ -35,7 +35,7 @@ _The **Garden Modeling** MVP will allow users to create accounts, save items to 
 
 ### Goals
 
-- _Create a working API that takes in and is able to add seeds/plants_
+- _Create a working API that takes in and is able to add all relevant items._
 - _Create CRUD application that can display, modify, delete, or add new plants depending on user permissions._
 - _Implement AUTH that allows users to add, edit or remove items from their own "gardens"._
 - _Allow users to save information to their "profiles"._
@@ -122,8 +122,8 @@ src
 |    Footer   |   class    |   n   |   n   | _The footer will have all relevant attribution and media links._      |
 |     Home    | functional |   n   |   y   | _The cards will render the post info via props._                 |
 |    Nursery  | functional |   y   |   n   | _The Nursery component will act as a home for all Nursery items that are passed in as cards from the API._ |
-|    NurseryCard   | functional |   y   |   y   | _The cards will render the post info via props._ |
-|    NurseryIndex    | functional |   y   |   y   | _The nursery index will have all items in the database listed alphabetically so that users can browse through items._ |
+|    NurseryCard   | functional |   n   |   y   | _The cards will render the post info via props._ |
+|    NurseryIndex    | functional |   n   |   y   | _The nursery index will have all items in the database listed alphabetically so that users can browse through items._ |
 |    MyGarden    | functional |   y   |   y   | _This component will allow users to view their saved items._ |
 |    AddGarden    | functional |   y   |   y   | _This component will allow users to add a new garden._ |
 |    EditGarden   | functional |   y   |   y   | _This component will allow users to add new items to their garden, change the name of their garden, or add any relevant notes._ |
@@ -148,7 +148,7 @@ src
 | AddGarden |    H     |     5 hrs      |     TK hrs     |     TK     |
 | EditGarden |    H     |     6 hrs      |     TK hrs     |     TK     |
 | Styling for CRUD Elements |    L     |     10 hrs      |     TK hrs     |     TK     |
-| TOTAL               |          |     6 hrs      |     TK hrs     |     TK     |
+| TOTAL               |          |     TK     |     TK      |     TK     |
 
 
 <br>
