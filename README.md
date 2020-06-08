@@ -22,13 +22,13 @@
 
 ## Overview
 
-_**Garden Modeling** is a full-stack web app that uses Rails and React in order to create a full CRUD app to manage gardens for those who want to plant them. From mulching to sowing and planting, this application will hopefully allow users to stay organized and remove complexity that comes with planting each individual seed or bulb, and allows users to keep all relevant information in one place._
+_**Garden Modeling** is a full-stack web app that uses Ruby on Rails and React in order to manage gardens for those who want to plant them. From mulching to sowing and planting, this application will allow users to stay organized and allow users to keep all relevant information in one place instead of searching for each plant's needs individually._
 
 <br>
 
 ## MVP
 
-_The **Garden Modeling** MVP will allow users to create accounts, save items to their accounts, and edit, update, and add notes to their own Garden Nursery planners._
+_The **Garden Modeling** MVP will allow users to create accounts, save items to their accounts, and edit, update, and add notes to their own Garden Nursery planners. It will also allow other users to see the plants we host information for on the site._
 
 <br>
 
@@ -131,8 +131,6 @@ src
 
 #### Component Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
-
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Header    |    L     |     3 hrs      |     TK hrs     |    TK    |
@@ -168,6 +166,9 @@ src
 > - Create an image drop so that users can also visually plan out garden beds using a grid system, grouping plants together by planting, frost and soil type. 
 > - Incorp. external weather API to update all relevant information and add new plants to the API. 
 > - Incorp. alerts for users (to alert users when they should water, look out for frosts or unexpected weather).
+> - Add a search and sort feature to allow users to group and search more easily. 
+> - Add in soil types, tags for plants that share characteristics or nest well together. 
+
 
 ***
 
