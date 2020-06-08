@@ -78,9 +78,7 @@ _The **Garden Modeling** MVP will allow users to create accounts, save items to 
 
 ![Add/Edit Tablet](https://user-images.githubusercontent.com/52892348/83982435-aca1e880-a8f4-11ea-9fc7-f7b0897b1187.png)
 
-![Home Mobile](https://user-images.githubusercontent.com/52892348/83982439-b297c980-a8f4-11ea-9ea6-ee5596cdcf73.png)
-
-![Add/Edit Mobile](https://user-images.githubusercontent.com/52892348/83982443-b62b5080-a8f4-11ea-9e5d-7a46d8f6b0a3.png)
+![Home Mobile](https://user-images.githubusercontent.com/52892348/83982439-b297c980-a8f4-11ea-9ea6-ee5596cdcf73.png) ![Add/Edit Mobile](https://user-images.githubusercontent.com/52892348/83982443-b62b5080-a8f4-11ea-9e5d-7a46d8f6b0a3.png)
 
 #### Component Tree
 
