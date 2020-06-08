@@ -62,7 +62,7 @@ _The **Garden Modeling** MVP will allow users to create accounts, save items to 
 
 ![Home](https://user-images.githubusercontent.com/52892348/83982348-27b6cf00-a8f4-11ea-961d-59142dddb0f2.png)
 
-![Nursery](https://user-images.githubusercontent.com/52892348/83982362-3c936280-a8f4-11ea-9ace-f7082c4c8e57.png)
+![Nursery - Signed In](https://user-images.githubusercontent.com/52892348/83984272-52a81f80-a902-11ea-8b34-c28ce2572afb.png)
 
 ![NurseryItem](https://user-images.githubusercontent.com/52892348/83982363-4b7a1500-a8f4-11ea-9075-b2ba38d06727.png)
 
@@ -84,7 +84,8 @@ _The **Garden Modeling** MVP will allow users to create accounts, save items to 
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
+![CompTreeGarden](https://user-images.githubusercontent.com/52892348/83984263-48862100-a902-11ea-89d0-c42e8d0aebb5.png)
+
 
 #### Component Hierarchy
 
@@ -98,6 +99,7 @@ src
       |__ Layout.jsx
       |__ Header.jsx
       |__ Footer.jsx
+      |__ AccountBubble.jsx
       |__ Home.jsx
       |__ Nursery.jsx
       |__ NurseryCard.jsx
@@ -169,9 +171,7 @@ src
 
 ## Post-MVP
 > - Create an image drop so that users can also visually plan out garden beds using a grid system, grouping plants together by planting, frost and soil type. 
-
 > - Incorp. external weather API to update all relevant information and add new plants to the API. 
-
 > - Incorp. alerts for users (to alert users when they should water, look out for frosts or unexpected weather).
 
 ***
