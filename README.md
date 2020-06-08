@@ -24,7 +24,6 @@
 
 _**Garden Modeling** is a full-stack web app that uses Rails and React in order to create a full CRUD app to manage gardens for those who want to plant them. From mulching to sowing and planting, this application will hopefully allow users to stay organized and remove complexity that comes with planting each individual seed or bulb, and allows users to keep all relevant information in one place._
 
-
 <br>
 
 ## MVP
@@ -36,10 +35,8 @@ _The **Garden Modeling** MVP will allow users to create accounts, save items to 
 ### Goals
 
 - _Create a full-stack app that takes in user permissions in order to access the app's main features._
-- _Apply CRUD that can display, modify, delete, or add new gardens/plants depending on user access level._
-- _Implement AUTH._
-- _Write clean, scalable code._
-- _Create simple, reusable components._
+- _Apply CRUD that can display, modify, delete, or add new gardens/plants depending on user access level & implement AUTH._
+- _Write clean, scalable code, with reusable components._
 
 
 <br>
