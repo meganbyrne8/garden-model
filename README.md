@@ -150,7 +150,6 @@ src
 | Create CRUD Actions for UserGarden |    H     |     6 hrs      |     TK hrs     |     TK     |
 | Auth (Sign In, Up, Out)   |    H     |     4 hrs      |     TK hrs     |    TK    |
 | Account Bubble   |    M     |     4 hrs      |     TK hrs     |    TK    |
-
 | MyGarden |    H     |     5 hrs      |     TK hrs     |     TK     |
 | AddGarden |    H     |     5 hrs      |     TK hrs     |     TK     |
 | EditGarden |    H     |     6 hrs      |     TK hrs     |     TK     |
