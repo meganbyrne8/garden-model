@@ -63,7 +63,7 @@ _The **Garden Modeling** MVP will allow users to create accounts, save items to 
 
 ![NurseryItem](https://user-images.githubusercontent.com/52892348/83982363-4b7a1500-a8f4-11ea-9075-b2ba38d06727.png)
 
-![Add/Edit](https://user-images.githubusercontent.com/52892348/83982393-6a78a700-a8f4-11ea-9406-7a186639ba5b.png)
+![Add/Edit](https://user-images.githubusercontent.com/52892348/84149594-b7f92f00-aa2e-11ea-9ad3-e55a4810a0a0.png)
 
 ![About](https://user-images.githubusercontent.com/52892348/83982409-77959600-a8f4-11ea-8c1a-6d21d0a9b9bf.png)
 
