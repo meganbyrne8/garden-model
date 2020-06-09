@@ -22,7 +22,7 @@
 
 ## Overview
 
-_**Garden Modeling** is a full-stack web app that uses Ruby on Rails and React in order to manage gardens for those who want to plant them. From mulching to sowing and planting, this application will allow users to stay organized and allow users to keep all relevant information in one place instead of searching for each plant's needs individually._
+_**Garden Modeling** is a full-stack web app that uses Ruby on Rails and React in order to manage gardens for those who want to plant & manage the garden themselves. From mulching to sowing and planting, this application will allow users to stay organized and allow users to keep all relevant information in one place instead of searching for each plant's needs individually._
 
 <br>
 
@@ -59,7 +59,7 @@ _The **Garden Modeling** MVP will allow users to create accounts, save items to 
 
 ![Home](https://user-images.githubusercontent.com/52892348/83982348-27b6cf00-a8f4-11ea-961d-59142dddb0f2.png)
 
-![Nursery - Signed In](https://user-images.githubusercontent.com/52892348/83984272-52a81f80-a902-11ea-8b34-c28ce2572afb.png)
+![Garden Modelingnurserydesk](https://user-images.githubusercontent.com/52892348/84142822-7d3dc980-aa23-11ea-9247-7f9c2844e3d6.png)
 
 ![NurseryItem](https://user-images.githubusercontent.com/52892348/83982363-4b7a1500-a8f4-11ea-9075-b2ba38d06727.png)
 
@@ -79,7 +79,7 @@ _The **Garden Modeling** MVP will allow users to create accounts, save items to 
 
 #### Component Tree
 
-![CompTreeGarden](https://user-images.githubusercontent.com/52892348/83984263-48862100-a902-11ea-89d0-c42e8d0aebb5.png)
+![CompTreeGarden](https://user-images.githubusercontent.com/52892348/84143618-e2de8580-aa24-11ea-8da8-43444e950d8a.png)
 
 
 #### Component Hierarchy
@@ -91,22 +91,26 @@ src
       |__ graphics
       |__ images
 |__ components/
-      |__ Layout.jsx
-      |__ Header.jsx
-      |__ Footer.jsx
-      |__ AccountBubble.jsx
+      |__ shared/
+        |__ Layout.jsx
+        |__ Header.jsx
+        |__ Footer.jsx
+        |__ AccountBubble.jsx
+      |__ nursery/
+        |__ Nursery.jsx
+        |__ NurseryCard.jsx
+        |__ NurseryIndex.jsx
+      |__ userAuth/
+        |__ SignUp.jsx
+        |__ SignIn.jsx
+        |__ SignOut.jsx
+      |__ userAccount/
+        |__ MyGarden.jsx
+        |__ AddGarden.jsx
+        |__ EditGarden.jsx
+        |__ AddPlant.jsx
+        |__ EditPlant.jsx
       |__ Home.jsx
-      |__ Nursery.jsx
-      |__ NurseryCard.jsx
-      |__ NurseryIndex.jsx
-      |__ SignUp.jsx
-      |__ SignIn.jsx
-      |__ SignOut.jsx
-      |__ MyGarden.jsx
-      |__ AddGarden.jsx
-      |__ EditGarden.jsx
-      |__ AddPlant.jsx
-      |__ EditPlant.jsx
 
 ```
 
@@ -163,6 +167,8 @@ src
 ***
 
 ## Post-MVP
+> - Add error handling for client/services.
+> - Add in tests for code to pass using Jest/Enzyme.
 > - Create an image drop so that users can also visually plan out garden beds using a grid system, grouping plants together by planting, frost and soil type. 
 > - Incorp. external weather API to update all relevant information and add new plants to the API. 
 > - Incorp. alerts for users (to alert users when they should water, look out for frosts or unexpected weather).
