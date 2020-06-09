@@ -35,7 +35,7 @@ _The **Garden Modeling** MVP will allow users to create accounts, save items to 
 ### Goals
 
 - _Create a full-stack app that takes in user permissions in order to access the app's main features._
-- _Apply CRUD that can display, modify, delete, or add new gardens/plants depending on user access level & implement AUTH._
+- _Apply CRUD that can display, modify, delete, or add new gardens depending on user access level & implement AUTH._
 - _Write clean, scalable code, with reusable components._
 
 
@@ -163,7 +163,7 @@ src
 
 #### ERD Model
 
-![Garden_Modeling_ERD](https://user-images.githubusercontent.com/52892348/83982661-6e0d2d80-a8f6-11ea-925b-bcefe8d75a92.png)
+![Garden_Modeling_ERD (2)](https://user-images.githubusercontent.com/52892348/84173011-afaeed00-aa4a-11ea-811c-3773f9ac2b91.png)
 
 <br>
 
@@ -171,7 +171,7 @@ src
 
 ## Post-MVP
 > - Add error handling for client/services.
-> - Add in tests for all future code to pass using Jest/Enzyme.
+> - Add in tests for all future client code to pass.
 > - Create an image drop so that users can also visually plan out garden beds using a grid system, grouping plants together by planting, frost and soil type. 
 > - Incorp. external weather API to update all relevant information and add new plants to the API. 
 > - Incorp. alerts for users (to alert users when they should water, look out for frosts or unexpected weather).
