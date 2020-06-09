@@ -171,7 +171,7 @@ src
 
 ## Post-MVP
 > - Add error handling for client/services.
-> - Add in tests for code to pass using Jest/Enzyme.
+> - Add in tests for all future code to pass using Jest/Enzyme.
 > - Create an image drop so that users can also visually plan out garden beds using a grid system, grouping plants together by planting, frost and soil type. 
 > - Incorp. external weather API to update all relevant information and add new plants to the API. 
 > - Incorp. alerts for users (to alert users when they should water, look out for frosts or unexpected weather).
