@@ -128,6 +128,7 @@ src
 |    MyGarden    | functional |   y   |   y   | _This component will allow users to view their saved items._ |
 |    AddGarden    | functional |   y   |   y   | _This component will allow users to add a new garden._ |
 |    EditGarden   | functional |   y   |   y   | _This component will allow users to add new items to their garden, change the name of their garden, or add any relevant notes._ |
+|    AccountBubble   | functional |   y   |   y   | _This component will display a greeting or indication to users who do have accounts and will direct them to navigate into their own accounts._       |
 |    SignUp   | functional |   y   |   n   | _This component will allow the user to sign up._ |
 |    SignIn   | functional |   y   |   n   | _This component will allow the user to sign in._ |
 |    SignOut   | functional |   y   |   n   | _This componenet will allow the user to sign out._ |
@@ -145,12 +146,15 @@ src
 | Nursery |    M     |     6 hrs      |     TK hrs     |     TK     |
 | NurseryCard |    H     |     5 hrs      |     TK hrs     |     TK     |
 | NurseryIndex |    M     |     4 hrs      |     TK hrs     |     TK     |
-| Styling for Home Elements |    L     |     10 hrs      |     TK hrs     |     TK     |
+| Styling for Home Elements |    L     |     8 hrs      |     TK hrs     |     TK     |
 | Create CRUD Actions for UserGarden |    H     |     6 hrs      |     TK hrs     |     TK     |
+| Auth (Sign In, Up, Out)   |    H     |     4 hrs      |     TK hrs     |    TK    |
+| Account Bubble   |    M     |     4 hrs      |     TK hrs     |    TK    |
+
 | MyGarden |    H     |     5 hrs      |     TK hrs     |     TK     |
 | AddGarden |    H     |     5 hrs      |     TK hrs     |     TK     |
 | EditGarden |    H     |     6 hrs      |     TK hrs     |     TK     |
-| Styling for CRUD Elements |    L     |     10 hrs      |     TK hrs     |     TK     |
+| Styling for CRUD Elements |    L     |     6 hrs      |     TK hrs     |     TK     |
 | TOTAL               |          |     TK     |     TK      |     TK     |
 
 
