@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Route } from "react-router-dom"
+import SignIn from "./SignIn"
 
 export default class Home extends Component {
   constructor() {
@@ -12,7 +13,7 @@ export default class Home extends Component {
     return (
       <main>
         <Route path='/user/login' render={() => (
-          <h2>Login here</h2>
+          <SignIn />
         )} />
       </main>
     )
