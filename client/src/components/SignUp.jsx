@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-export default class SignIn extends Component {
+export default class SignUp extends Component {
   state = {
     username: "",
-    password: ""
+    password: "",
+    email: ""
   }
 
   handleChange = (e) => {
@@ -16,15 +17,15 @@ export default class SignIn extends Component {
 
 
   render() {
-    const { username, password } = this.state;
-    const { handleLoginSubmit } = this.props
+    const { username, email, password } = this.state;
+    const { handleSignUpSubmit } = this.props
 
     return (
       <form onSubmit={(e) => {
         e.preventDefault()
-        handleLoginSubmit(this.state)
+        handleSignUpSubmit(this.state)
       }}>
-        <h3>Login</h3>
+        <h3>Sign Up</h3>
         <label htmlFor="username">username:</label>
         <input
           id="username"
@@ -33,6 +34,16 @@ export default class SignIn extends Component {
           name="username"
           onChange={this.handleChange}
         />
+        <br />
+        <label htmlFor="email" >email:</label>
+        <input
+          id="email"
+          type="email"
+          value={email}
+          name="email"
+          onChange={this.handleChange}
+        />
+        <br />
         <label htmlFor="password" >password:</label>
         <input
           id="password"
@@ -41,7 +52,7 @@ export default class SignIn extends Component {
           name="password"
           onChange={this.handleChange}
         />
-        <Link to='/user/signup'>Sign Up </Link>
+        <br />
         <button>Submit</button>
       </form>
     )

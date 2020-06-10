@@ -1,19 +1,24 @@
 import React, { Component } from 'react'
 import { Route } from "react-router-dom"
 import SignIn from "./SignIn"
+import SignUp from "./SignUp"
 
 export default class Home extends Component {
-  constructor() {
-    super()
-    this.state = {
+  state = {
 
-    }
   }
+
+
   render() {
     return (
       <main>
         <Route path='/user/login' render={() => (
-          <SignIn />
+          <SignIn handleLoginSubmit={this.props.handleLoginSubmit} />
+        )} />
+        <Route path='/user/signup' render={() => (
+          <SignUp
+            handleSignUpSubmit={this.props.handleSignUpSubmit}
+          />
         )} />
       </main>
     )
