@@ -38,6 +38,15 @@ class GardensController < ApplicationController
     @garden.destroy
   end
 
+  def garden_to_plant
+    @plant = Plant.find(params[:plant_id])
+    @garden = Garden.find(params[:id])
+
+    @garden.plants << @plant
+    render json: @garden, include: :plants
+  end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_garden
