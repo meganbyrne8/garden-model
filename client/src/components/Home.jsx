@@ -5,41 +5,39 @@ import SignIn from "./userAuth/SignIn"
 import SignUp from "./userAuth/SignUp"
 import Nursery from "./nursery/Nursery"
 import NurseryIndex from "./nursery/NurseryIndex"
-import MyGarden from "./userAccount/MyGarden"
 import HomeInfo from "./HomeInfo"
 import About from "./About"
 
 export default class Home extends Component {
-
+  constructor(props) {
+    super(props)
+  }
 
   render() {
     return (
-      <Layout>
+      <Layout
+        currentUser={this.props.currentUser}
+        handleLogOut={this.props.handleLogOut}
+      >
         <>
-          <main>
-
+          <header>
             <Route exact path='/user/login' render={() => (
               <SignIn handleLoginSubmit={this.props.handleLoginSubmit} />
-            )} />
+            )}
+            />
+
             <Route path='/user/signup' render={() => (
               <SignUp
-                handleSignUpSubmit={this.props.handleSignUpSubmit}
-              />
-            )} />
+                handleSignUpSubmit={this.props.handleSignUpSubmit} />
+            )}
+            />
 
             <Route exact path='/plants' component={Nursery} />
-          </main>
+          </header>
 
           <Route exact path='/plants/:id' component={NurseryIndex} />
-
-
-          <Route exact path='/about'>
-            <About />
-          </Route>
-
-          <Route exact path="/">
-            <HomeInfo />
-          </Route>
+          <Route exact path='/about' component={About} />
+          <Route exact path="/" component={HomeInfo} />
 
         </>
       </Layout>

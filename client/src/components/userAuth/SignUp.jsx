@@ -33,7 +33,6 @@ export default class SignUp extends Component {
           name="username"
           onChange={this.handleChange}
         />
-        <br />
         <label htmlFor="email" >email:</label>
         <input
           id="email"
@@ -42,7 +41,6 @@ export default class SignUp extends Component {
           name="email"
           onChange={this.handleChange}
         />
-        <br />
         <label htmlFor="password" >password:</label>
         <input
           id="password"
@@ -51,7 +49,6 @@ export default class SignUp extends Component {
           name="password"
           onChange={this.handleChange}
         />
-        <br />
         <button>Submit</button>
       </form>
     )

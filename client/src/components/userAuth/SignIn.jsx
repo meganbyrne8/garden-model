@@ -16,7 +16,7 @@ export default class SignIn extends Component {
 
 
   render() {
-    const { username, password } = this.state;
+    const { username, password } = this.state
     const { handleLoginSubmit } = this.props
 
     return (
@@ -25,7 +25,6 @@ export default class SignIn extends Component {
         handleLoginSubmit(this.state)
       }}>
         <h3>Login</h3>
-        <br />
         <label htmlFor="username">username:</label>
         <input
           id="username"
@@ -34,7 +33,6 @@ export default class SignIn extends Component {
           name="username"
           onChange={this.handleChange}
         />
-        <br />
         <label htmlFor="password" >password:</label>
         <input
           id="password"
@@ -43,9 +41,7 @@ export default class SignIn extends Component {
           name="password"
           onChange={this.handleChange}
         />
-        <br />
         <Link to='/user/signup'>Sign Up </Link>
-        <br />
         <button>Submit</button>
       </form>
     )
