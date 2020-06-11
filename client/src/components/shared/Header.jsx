@@ -7,7 +7,7 @@ export default function header() {
       <Link to='/'>
         <h1>My Garden</h1>
       </Link>
-      <Link to='/nursery'>The Nursery</Link>
+      <Link to='/plants'>The Nursery</Link>
       <br />
       <Link to='/about'>About</Link>
       <br />

@@ -5,18 +5,7 @@ import { getAllPlants, getOnePlant } from "../../services/plants"
 
 export default class Nursery extends Component {
   state = {
-    allPlants: [],
-    onePlant: []
-  }
-
-  handleGetAllPlants = async () => {
-    const allPlants = await getAllPlants()
-    this.setState({ allPlants })
-  }
-
-  handleGetOnePlant = async (id) => {
-    const showPlant = await getOnePlant()
-    this.setState({ showPlant })
+    allPlants: []
   }
 
   async componentDidMount() {
@@ -36,6 +25,7 @@ export default class Nursery extends Component {
         key={index}
       />
     ));
+
     return (
       <>
         <div>
