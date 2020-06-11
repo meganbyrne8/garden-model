@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { Link } from 'react-router-dom'
 
 export default class NurseryCard extends Component {
   state = {
@@ -8,7 +8,7 @@ export default class NurseryCard extends Component {
 
   async componentDidMount() {
     this.setState({
-      url: '/nursery' + this.props.id
+      url: '/plants/' + this.props.id
     })
   }
 
@@ -17,7 +17,9 @@ export default class NurseryCard extends Component {
     return (
       <div>
         <h4>{this.props.name}</h4>
-        <img src={this.props.imageurl} />
+        <Link to={this.state.url}>
+          <img src={this.props.imageurl} />
+        </Link>
         <p>{this.props.genus}</p>
         <p>{this.props.description}</p>
         <p>{this.props.plantingnotes}</p>

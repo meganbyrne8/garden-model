@@ -4,7 +4,8 @@ import { loginUser, registerUser } from './services/auth'
 
 export default class App extends Component {
   state = {
-    currentUser: null
+    currentUser: null,
+    singlePlant: []
   }
 
   handleLoginSubmit = async (loginData) => {
@@ -24,6 +25,7 @@ export default class App extends Component {
         <Home
           handleLoginSubmit={this.handleLoginSubmit}
           handleSignUpSubmit={this.handleSignUpSubmit}
+          handleGetSinglePlant={this.handleGetSinglePlant}
         />
       </div>
     )

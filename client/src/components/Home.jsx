@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Route } from "react-router-dom"
 import Layout from "./shared/Layout"
-import Header from "./shared/Header"
 import SignIn from "./userAuth/SignIn"
 import SignUp from "./userAuth/SignUp"
 import Nursery from "./nursery/Nursery"
@@ -28,20 +27,11 @@ export default class Home extends Component {
               />
             )} />
 
-            <Route exact path='/nursery' render={() => (
-              <Nursery />
-            )} />
-
-
-            <Route exact path='/nursery/index'>
-              <NurseryIndex />
-            </Route>
-
+            <Route exact path='/plants' component={Nursery} />
           </main>
 
-          <Route exact path='/myAccount'>
-            <MyGarden />
-          </Route>
+          <Route exact path='/plants/:id' component={NurseryIndex} />
+
 
           <Route exact path='/about'>
             <About />
