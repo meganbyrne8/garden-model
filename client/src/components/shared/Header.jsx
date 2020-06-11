@@ -13,7 +13,6 @@ export default function header(props) {
         props.currentUser
           ?
           <>
-            <Link to='/about'>My Account</Link>
             <button onClick={props.handleLogOut}>Logout</button>
           </>
           :

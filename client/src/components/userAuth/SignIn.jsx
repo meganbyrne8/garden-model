@@ -17,12 +17,17 @@ export default class SignIn extends Component {
 
   render() {
     const { username, password } = this.state
-    const { handleLoginSubmit } = this.props
+    const { handleLoginSubmit, history } = this.props
 
     return (
       <form onSubmit={(e) => {
         e.preventDefault()
         handleLoginSubmit(this.state)
+        history.push('/myAccount')
+        this.setState({
+          username: "",
+          password: ""
+        })
       }}>
         <h3>Login</h3>
         <label htmlFor="username">username:</label>

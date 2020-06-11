@@ -17,12 +17,18 @@ export default class SignUp extends Component {
 
   render() {
     const { username, email, password } = this.state;
-    const { handleSignUpSubmit } = this.props
+    const { handleSignUpSubmit, history } = this.props
 
     return (
       <form onSubmit={(e) => {
         e.preventDefault()
         handleSignUpSubmit(this.state)
+        history.push('/myAccount')
+        this.setState({
+          username: "",
+          email: "",
+          password: ""
+        })
       }}>
         <h3>Sign Up</h3>
         <label htmlFor="username">username:</label>
