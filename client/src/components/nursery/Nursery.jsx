@@ -1,18 +1,50 @@
 import React, { Component } from 'react'
 import NurseryCard from "./NurseryCard"
+import { getAllPlants, getOnePlant } from "../../services/plants"
+
 
 export default class Nursery extends Component {
   state = {
-
+    allPlants: [],
+    onePlant: []
   }
 
+  handleGetAllPlants = async () => {
+    const allPlants = await getAllPlants()
+    this.setState({ allPlants })
+  }
+
+  handleGetOnePlant = async (id) => {
+    const showPlant = await getOnePlant()
+    this.setState({ showPlant })
+  }
+
+  async componentDidMount() {
+    const allPlants = await getAllPlants()
+    this.setState({ allPlants })
+  }
 
   render() {
+    const populatePlants = this.state.allPlants.map((plant, index) => (
+      <NurseryCard
+        id={plant.id}
+        name={plant.name}
+        genus={plant.genus}
+        description={plant.description}
+        imageurl={plant.imageurl}
+        plantingnotes={plant.plantingnotes}
+        key={index}
+      />
+    ));
     return (
-      <div>
-        <h2>Nursery Section</h2>
-        <NurseryCard handleGetAllPlants={this.props.handleGetAllPlants} />
-      </div>
+      <>
+        <div>
+          <h2>This is the Nursery!</h2>
+        </div>
+        <div>
+          {populatePlants}
+        </div>
+      </>
     )
   }
 }
