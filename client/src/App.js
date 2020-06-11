@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
-import Header from './shared/Header'
 import Home from "./components/Home"
 import { loginUser, registerUser } from './services/auth'
+import { getAllPlants } from './services/plants'
 
 export default class App extends Component {
   state = {
-    currentUser: null
+    currentUser: null,
+    allPlants: null
   }
 
   handleLoginSubmit = async (loginData) => {
@@ -18,14 +19,19 @@ export default class App extends Component {
     this.setState({ currentUser })
   }
 
+  handleGetAllPlants = async () => {
+    const allPlants = await getAllPlants()
+    this.setState({ allPlants })
+  }
+
 
   render() {
     return (
       <div>
-        <Header />
         <Home
           handleLoginSubmit={this.handleLoginSubmit}
           handleSignUpSubmit={this.handleSignUpSubmit}
+          handleGetAllPlants={this.handleGetAllPlants}
         />
       </div>
     )
