@@ -7,7 +7,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap);
 
 
-@media only screen and (min-width: 768px) and (max-width: 1600px){
+@media only screen and (min-width: 768px) and (max-width: 3000px){
   .header-div {
     display: flex;
     flex-direction: row;
@@ -30,7 +30,7 @@
     font-weight: 600;
   }
 
-  .hamburger {
+  .burger-menu {
     display: none
   }
 
@@ -46,7 +46,7 @@
   .logo {
     display: flex;
     align-items: flex-start;
-    width: 50%;
+    width: 60%;
     margin: 0px 20px;
   }
   
@@ -54,7 +54,13 @@
     display: none;
   }
 
-  .hamburger {
-    display: none
+  .burger-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 15%;
   }
+    
+
   }

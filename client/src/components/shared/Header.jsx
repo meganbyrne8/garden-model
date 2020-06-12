@@ -45,8 +45,12 @@ export default class Header extends Component {
                 <Link to='/user/login'>Sign In</Link>
             }
           </div>
-          <div>
-            <HamburgerMenu openMenuToggle={this.openMenu} className="hamburger" />
+          <div className="burger-menu">
+            <HamburgerMenu
+              openMenuToggle={this.openMenu}
+              currentUser={this.props.currentUser}
+              handleLogOut={this.props.handleLogOut}
+            />
           </div>
         </div>
       </div>
@@ -55,4 +59,4 @@ export default class Header extends Component {
 }
 
 
-// Citing code for the hamburger menu: https://github.com/negomi/react-burger-menu#animations
+// Citing code for the hamburger menu: https://github.com/mattvox/react-css-burger
