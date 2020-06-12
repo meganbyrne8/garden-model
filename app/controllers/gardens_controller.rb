@@ -1,5 +1,6 @@
 class GardensController < ApplicationController
-  before_action :set_garden, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [ :create, :update, :destroy ]
+  before_action :set_garden, only: [ :update, :destroy ]
 
   # GET /gardens
   def index
@@ -10,15 +11,18 @@ class GardensController < ApplicationController
 
   # GET /gardens/1
   def show
+    @garden = Garden.find(params[:id])
+
     render json: @garden, include: :plants
   end
 
   # POST /gardens
   def create
     @garden = Garden.new(garden_params)
+    @garden.user = @current_user
 
     if @garden.save
-      render json: @garden, status: :created, location: @garden
+      render json: @garden, status: :created
     else
       render json: @garden.errors, status: :unprocessable_entity
     end
@@ -50,11 +54,11 @@ class GardensController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_garden
-      @garden = Garden.find(params[:id])
+      @garden = @current_user.gardens.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
     def garden_params
-      params.require(:garden).permit(:name, :description, :user_id)
+      params.require(:garden).permit(:name)
     end
 end

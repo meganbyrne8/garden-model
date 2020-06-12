@@ -1,0 +1,13 @@
+.garden-parent-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.y-axis {
+  width: 30%;
+}
+
+.x-axis {
+  width: 70%;
+}
