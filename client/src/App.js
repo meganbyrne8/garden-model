@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
 import Home from "./components/Home"
-import { loginUser, registerUser } from './services/auth'
+import HamburgerMenu from './components/shared/HamburgerMenu'
+import { loginUser, registerUser, removeToken, verifyUser } from './services/auth'
 
 export default class App extends Component {
   state = {
-    currentUser: null,
-    singlePlant: []
+    currentUser: null
+  }
+
+  componentDidMount() {
+    this.handleVerify()
   }
 
   handleLoginSubmit = async (loginData) => {
@@ -18,6 +22,19 @@ export default class App extends Component {
     this.setState({ currentUser })
   }
 
+  handleLogOut = () => {
+    this.setState({
+      currentUser: null
+    })
+    localStorage.clear()
+    removeToken()
+  }
+
+  handleVerify = async () => {
+    const currentUser = await verifyUser()
+    this.setState({ currentUser })
+  }
+
 
   render() {
     return (
@@ -26,6 +43,8 @@ export default class App extends Component {
           handleLoginSubmit={this.handleLoginSubmit}
           handleSignUpSubmit={this.handleSignUpSubmit}
           handleGetSinglePlant={this.handleGetSinglePlant}
+          currentUser={this.state.currentUser}
+          handleLogOut={this.handleLogOut}
         />
       </div>
     )

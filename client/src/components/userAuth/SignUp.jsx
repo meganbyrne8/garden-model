@@ -17,12 +17,18 @@ export default class SignUp extends Component {
 
   render() {
     const { username, email, password } = this.state;
-    const { handleSignUpSubmit } = this.props
+    const { handleSignUpSubmit, history } = this.props
 
     return (
       <form onSubmit={(e) => {
         e.preventDefault()
         handleSignUpSubmit(this.state)
+        history.push('/myAccount')
+        this.setState({
+          username: "",
+          email: "",
+          password: ""
+        })
       }}>
         <h3>Sign Up</h3>
         <label htmlFor="username">username:</label>
@@ -33,7 +39,6 @@ export default class SignUp extends Component {
           name="username"
           onChange={this.handleChange}
         />
-        <br />
         <label htmlFor="email" >email:</label>
         <input
           id="email"
@@ -42,7 +47,6 @@ export default class SignUp extends Component {
           name="email"
           onChange={this.handleChange}
         />
-        <br />
         <label htmlFor="password" >password:</label>
         <input
           id="password"
@@ -51,7 +55,6 @@ export default class SignUp extends Component {
           name="password"
           onChange={this.handleChange}
         />
-        <br />
         <button>Submit</button>
       </form>
     )

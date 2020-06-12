@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import NurseryCard from "./NurseryCard"
-import { getAllPlants, getOnePlant } from "../../services/plants"
+import { getAllPlants } from "../../services/plants"
 
 
 export default class Nursery extends Component {
