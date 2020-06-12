@@ -36,23 +36,23 @@ export default class Home extends Component {
               )}
             />
             <Route exact path='/plants' component={Nursery} />
+            {
+              this.props.currentUser
+                ?
+                <>
+                  <AccountBubble />
+                  <Route exact path='/myAccount' component={MyGarden} />
+                </>
+                :
+                <Route exact path='/myAccount'>
+                  <h2>This page is for users only. Please login or signup to see this page.</h2>
+                </Route>
+            }
           </header>
 
           <Route exact path='/plants/:id' component={NurseryIndex} />
           <Route exact path='/about' component={About} />
           <Route exact path='/' component={HomeInfo} />
-          {
-            this.props.currentUser
-              ?
-              <>
-                <AccountBubble />
-                <Route exact path='/myAccount' component={MyGarden} />
-              </>
-              :
-              <Route exact path='/myAccount'>
-                <h2>This page is for users only. Please login or signup to see this page.</h2>
-              </Route>
-          }
 
         </>
       </Layout>

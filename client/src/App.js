@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Home from "./components/Home"
+import HamburgerMenu from './components/shared/HamburgerMenu'
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth'
 
 export default class App extends Component {
