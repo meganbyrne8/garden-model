@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { getAllGardens, deleteGarden } from '../../services/gardens'
-import GardenTable from './GardenTable'
 import PlantTable from './PlantTable'
 import './MyGarden.css'
 

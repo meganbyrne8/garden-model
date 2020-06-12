@@ -1,6 +1,7 @@
 .account-button {
-  background-color: purple;
+  background-color: violet;
   color: white;
+  font-weight: 700;
   padding: 10px;
   border-radius: 25px;
 }

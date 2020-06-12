@@ -1,0 +1,32 @@
+h4 {
+  margin: 5px;
+}
+
+p {
+  font-style: italic;
+  margin: 5px;
+}
+
+.nursery-parent-div {
+  margin: 20px 20px;
+}
+
+.nursery-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+.nursery-card-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nursery-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
