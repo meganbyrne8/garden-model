@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import NurseryCard from "./NurseryCard"
 import { getAllPlants } from "../../services/plants"
+import './Nursery.css'
 
 
 export default class Nursery extends Component {
@@ -28,10 +29,10 @@ export default class Nursery extends Component {
 
     return (
       <>
-        <div>
+        <div className="nursery-parent-div">
           <h2>This is the Nursery!</h2>
         </div>
-        <div>
+        <div className="nursery-card">
           {populatePlants}
         </div>
       </>

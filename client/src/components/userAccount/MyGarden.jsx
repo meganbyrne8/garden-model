@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { getAllGardens, deleteGarden } from '../../services/gardens'
-import GardenTable from './GardenTable'
 import PlantTable from './PlantTable'
 import './MyGarden.css'
 
@@ -26,6 +25,7 @@ export default class MyGarden extends Component {
     return (
 
       <div className="garden-parent-div">
+
         <div className="y-axis">
           <h3>My Gardens</h3>
           <Link to='/new/garden'>
@@ -39,7 +39,9 @@ export default class MyGarden extends Component {
                   {
                     currentUser && currentUser.id === garden.user_id && (
                       <>
-                        <button>Edit</button>
+                        <Link to={'/gardens/' + garden.id + '/edit'} >
+                          <button>Edit Garden</button>
+                        </Link>
                         <button onClick={() => deleteGarden(garden.id)}>Delete</button>
                       </>
                     )

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Route } from "react-router-dom"
-import { getAllGardens, createGarden, deleteGarden } from '../services/gardens'
+import { getAllGardens, createGarden, deleteGarden, updateGarden } from '../services/gardens'
 import Layout from "./shared/Layout"
 import SignIn from "./userAuth/SignIn"
 import SignUp from "./userAuth/SignUp"
@@ -11,6 +11,8 @@ import About from "./About"
 import MyGarden from "./userAccount/MyGarden"
 import AccountBubble from "./shared/AccountBubble"
 import AddGarden from "./userAccount/AddGarden"
+import EditGarden from "./userAccount/EditGarden"
+
 
 export default class Home extends Component {
   state = {
@@ -30,6 +32,13 @@ export default class Home extends Component {
     const newGarden = await createGarden(gardenData)
     this.setState(prevState => ({
       gardens: [...prevState.gardens, newGarden]
+    }))
+  }
+
+  putGarden = async (id, gardenData) => {
+    const updatedGarden = await updateGarden(id, gardenData)
+    this.setState(prevState => ({
+      gardens: prevState.gardens.map(garden => garden.id === id ? updatedGarden : garden)
     }))
   }
 
@@ -86,6 +95,7 @@ export default class Home extends Component {
           <Route exact path='/plants/:id' component={NurseryIndex} />
           <Route exact path='/about' component={About} />
           <Route exact path='/' component={HomeInfo} />
+
           <Route exact path='/new/garden'
             render={() => (
               <AddGarden
@@ -93,6 +103,18 @@ export default class Home extends Component {
                 currentUser={this.props.currentUser}
                 postGarden={this.postGarden}
               />)}
+          />
+          <Route exact path='/gardens/:id/edit'
+            render={(props) => {
+              const gardenId = props.match.params.id
+              const garden = this.state.gardens.find(garden => garden.id === parseInt(gardenId))
+              return <EditGarden
+                {...props}
+                garden={garden}
+                currentUser={this.props.currentUser}
+                updateGarden={this.putGarden}
+              />
+            }}
           />
 
 
