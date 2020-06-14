@@ -1,0 +1,26 @@
+.nursery-index-parent {
+  display: flex;
+  flex-direction: row;  
+  width: 90%;
+  margin: 7% 0 0 5%;
+}
+
+.nursery-index-image {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.nursery-index-image img {
+  height: 300px;
+  max-width: initial;
+  margin-right: 50px;
+}
+
+.nursery-index-info {
+  width: 70%;
+}
+
+.nursery-index-info p {
+  margin: 5% 0 5% 0;
+}

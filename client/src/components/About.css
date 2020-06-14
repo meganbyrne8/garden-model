@@ -1,0 +1,61 @@
+* {
+  font-family: 'Montserrat';
+  text-decoration: none;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap);
+
+
+@media only screen and (min-width: 768px) and (max-width: 3000px){
+  .parent-div-about-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .info-div-about {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px;
+  }
+  
+  .about-team-div {
+    margin: 20px;
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .about-team-div img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+
+}
+@media only screen and (min-width: 375px) and (max-width: 768px){
+  .parent-div-about-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .info-div-about {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px;
+  }
+  
+  .about-team-div {
+    margin: 20px;
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .about-team-div img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  
+  }

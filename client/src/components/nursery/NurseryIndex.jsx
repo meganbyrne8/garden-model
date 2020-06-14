@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { getOnePlant } from '../../services/plants'
+import './NurseryIndex.css'
 
 
 export default class NurseryIndex extends Component {
@@ -26,17 +27,17 @@ export default class NurseryIndex extends Component {
 
   render() {
     return (
-      <>
-        <div>
+      <div className="nursery-index-parent">
+        <div className="nursery-index-image">
           <img src={this.state.imageurl} />
         </div>
-        <div>
+        <div className="nursery-index-info">
           <h3>{this.state.name}</h3>
           <p>{this.state.genus}</p>
           <p>{this.state.description}</p>
           <p>{this.state.plantingnotes}</p>
         </div>
-      </>
+      </div>
     )
   }
 }

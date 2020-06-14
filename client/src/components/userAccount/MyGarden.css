@@ -4,8 +4,32 @@
   flex-direction: row;
 }
 
+.title-section-garden-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.title-section-garden-page h3 {
+  margin: 10px 30px 10px 0;
+}
+
 .y-axis {
-  width: 30%;
+  width: 20%;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.gardens-mapped {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.edit-delete-buttons span {
+  margin: 5px;
 }
 
 .x-axis {
