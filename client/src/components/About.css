@@ -1,61 +1,127 @@
-* {
-  font-family: 'Montserrat';
-  text-decoration: none;
+@media only screen and (min-width: 768px) and (max-width: 3000px){.parent-div-about-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 5% 1%;
 }
 
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap);
+.info-div-about {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px;
+}
 
+.about-team {
+  display: flex;
+  flex-direction: column;
+  width: 50%
+}
 
-@media only screen and (min-width: 768px) and (max-width: 3000px){
+.about-team-div {
+  margin: 20px;
+}
+
+.about-team-div img {
+  max-width: 100px;
+  max-height: 100px;
+}
+}
+
+@media only screen and (min-width: 659px) and (max-width: 768px){
   .parent-div-about-info {
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin: 5% 1%;
   }
-  
+
   .info-div-about {
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin: 20px;
+  }
+
+  .about-team {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  .about-team-div {
+    margin: 5%;
+  }
+
+  .about-team-info {
+    margin: 0;
+  }
+
+  .about-team-info h4 {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .about-team-info p {
+    margin: 0 auto;
   }
   
   .about-team-div {
-    margin: 20px;
-    width: 50%;
-    overflow: hidden;
-  }
-
-  .about-team-div img {
-    max-width: 300px;
-    max-height: 300px;
-  }
-
-
-}
-@media only screen and (min-width: 375px) and (max-width: 768px){
-  .parent-div-about-info {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    width: 80%;
+    justify-content: space-around;
+}
+
+  .about-team-div img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 659px){
+  .parent-div-about-info {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    margin: 5% 1%;
   }
 
   .info-div-about {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin: 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-team {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+
   }
   
   .about-team-div {
-    margin: 20px;
-    width: 50%;
-    overflow: hidden;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15%;
+}
 
   .about-team-div img {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 100px;
+    max-height: 100px;
   }
-  
+
+  .about-team-info h4 {
+    margin: 1%;
+    padding: 0;
   }
+
+  .about-team-info p {
+    margin: 1%;
+    padding: 0 10px;
+  }
+
+}

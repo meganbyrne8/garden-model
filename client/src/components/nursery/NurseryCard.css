@@ -14,3 +14,14 @@
   box-sizing: border-box;
   overflow: hidden;
 }
+
+.nursery-card-info {
+  display: flex;
+  align-items: center;
+}
+
+.nursery-card-info h4 {
+  margin: 0;
+  padding: 0;
+}
+

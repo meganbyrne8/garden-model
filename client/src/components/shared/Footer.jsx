@@ -8,12 +8,12 @@ export default class Footer extends Component {
       <footer className="footer-div">
         <div className="social-media-icons">
           <SocialMediaIconsReact
-            borderColor="rgba(0,0,0,0.25)"
+            borderColor="rgba(255,255,255,1)"
             borderWidth="5"
-            borderStyle="groove"
+            borderStyle="double"
             icon="linkedin"
             iconColor="rgba(255,255,255,1)"
-            backgroundColor="rgba(184,28,223,0.47)"
+            backgroundColor="rgba(186,121,139,1)"
             iconSize="5"
             roundness="50%"
             url="https://some-website.com/my-social-media-url"
@@ -21,12 +21,12 @@ export default class Footer extends Component {
         </div>
         <div className="social-media-icons">
           <SocialMediaIconsReact
-            borderColor="rgba(0,0,0,0.25)"
+            borderColor="rgba(255,255,255,1)"
             borderWidth="5"
-            borderStyle="groove"
+            borderStyle="double"
             icon="twitter"
             iconColor="rgba(255,255,255,1)"
-            backgroundColor="rgba(184,28,223,0.47)"
+            backgroundColor="rgba(186,121,139,1)"
             iconSize="5"
             roundness="50%"
             url="https://some-website.com/my-social-media-url"
@@ -34,12 +34,12 @@ export default class Footer extends Component {
         </div>
         <div className="social-media-icons">
           <SocialMediaIconsReact
-            borderColor="rgba(0,0,0,0.25)"
+            borderColor="rgba(255,255,255,1)"
             borderWidth="5"
-            borderStyle="groove"
+            borderStyle="double"
             icon="github"
             iconColor="rgba(255,255,255,1)"
-            backgroundColor="rgba(184,28,223,0.47)"
+            backgroundColor="rgba(186,121,139,1)"
             iconSize="5"
             roundness="50%"
             url="https://some-website.com/my-social-media-url"

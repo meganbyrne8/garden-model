@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './SignUp.css'
 
 export default class SignUp extends Component {
   state = {
@@ -20,16 +21,18 @@ export default class SignUp extends Component {
     const { handleSignUpSubmit, history } = this.props
 
     return (
-      <form onSubmit={(e) => {
-        e.preventDefault()
-        handleSignUpSubmit(this.state)
-        history.push('/myAccount')
-        this.setState({
-          username: "",
-          email: "",
-          password: ""
-        })
-      }}>
+      <form
+        className="sign-up-form"
+        onSubmit={(e) => {
+          e.preventDefault()
+          handleSignUpSubmit(this.state)
+          history.push('/myAccount')
+          this.setState({
+            username: "",
+            email: "",
+            password: ""
+          })
+        }}>
         <h3>Sign Up</h3>
         <label htmlFor="username">username:</label>
         <input

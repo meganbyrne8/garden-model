@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import './SignIn.css'
 
 export default class SignIn extends Component {
   state = {
@@ -20,17 +21,19 @@ export default class SignIn extends Component {
     const { handleLoginSubmit, history } = this.props
 
     return (
-      <form onSubmit={(e) => {
-        e.preventDefault()
-        handleLoginSubmit(this.state)
-        history.push('/myAccount')
-        this.setState({
-          username: "",
-          password: ""
-        })
-      }}>
+      <form
+        className="sign-in-form"
+        onSubmit={(e) => {
+          e.preventDefault()
+          handleLoginSubmit(this.state)
+          history.push('/myAccount')
+          this.setState({
+            username: "",
+            password: ""
+          })
+        }}>
         <h3>Login</h3>
-        <label htmlFor="username">username:</label>
+        <label htmlFor="username">Username</label>
         <input
           id="username"
           type="text"
@@ -38,7 +41,7 @@ export default class SignIn extends Component {
           name="username"
           onChange={this.handleChange}
         />
-        <label htmlFor="password" >password:</label>
+        <label htmlFor="password">Password</label>
         <input
           id="password"
           type="password"
@@ -46,8 +49,8 @@ export default class SignIn extends Component {
           name="password"
           onChange={this.handleChange}
         />
-        <Link to='/user/signup'>Sign Up </Link>
         <button>Submit</button>
+        <Link to='/user/signup'>Sign Up </Link>
       </form>
     )
   }
