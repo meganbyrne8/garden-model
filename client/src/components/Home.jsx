@@ -97,13 +97,14 @@ export default class Home extends Component {
           <Route exact path='/' component={HomeInfo} />
 
           <Route exact path='/new/garden'
-            render={() => (
+            render={(props) => (
               <AddGarden
-                {...this.props}
+                {...props}
                 currentUser={this.props.currentUser}
                 postGarden={this.postGarden}
               />)}
           />
+
           <Route exact path='/gardens/:id/edit'
             render={(props) => {
               const gardenId = props.match.params.id

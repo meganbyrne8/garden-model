@@ -4,8 +4,7 @@ import { Redirect } from 'react-router-dom'
 
 export default class AddGarden extends Component {
   state = {
-    name: '',
-    created: false
+    name: ''
   }
 
   handleChange = (e) => {
@@ -18,6 +17,7 @@ export default class AddGarden extends Component {
   handleSubmit = (e) => {
     e.preventDefault()
     this.props.postGarden(this.state)
+    this.props.history.push('/')
     this.setState({
       name: '',
       created: true
@@ -25,11 +25,7 @@ export default class AddGarden extends Component {
   }
 
   render() {
-    const { name, created } = this.state
-
-    if (created) {
-      return <Redirect to={`/myAccount`} />
-    }
+    const { name } = this.state
 
     return (
       <div>

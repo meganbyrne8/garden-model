@@ -15,8 +15,13 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  overflow-y: scroll;
+  margin: 0 auto;
+  width: 90%;
 }
+
+.nursery-card-parent {
+  width: 100%;
+} 
 
 .nursery-card-image {
   display: flex;

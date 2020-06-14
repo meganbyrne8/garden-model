@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { getAllGardens, deleteGarden } from '../../services/gardens'
+import { getAllGardens } from '../../services/gardens'
 import PlantTable from './PlantTable'
 import './MyGarden.css'
 
@@ -29,7 +29,7 @@ export default class MyGarden extends Component {
         <div className="y-axis">
           <h3>My Gardens</h3>
           <Link to='/new/garden'>
-            <span>&#43;</span>
+            <span>&#10133;</span>
           </Link>
           <div>
             {
@@ -40,9 +40,9 @@ export default class MyGarden extends Component {
                     currentUser && currentUser.id === garden.user_id && (
                       <>
                         <Link to={'/gardens/' + garden.id + '/edit'} >
-                          <button>Edit Garden</button>
+                          <span>&#9998;</span>
                         </Link>
-                        <button onClick={() => deleteGarden(garden.id)}>Delete</button>
+                        <span onClick={() => deleteGarden(garden.id)}>&#10060;</span>
                       </>
                     )
                   }
@@ -54,7 +54,7 @@ export default class MyGarden extends Component {
 
         <div className="x-axis">
           <h3>My Plants</h3>
-          <span>&#43;</span>
+          <span>&#10133;</span>
           <span>&#9998;</span>
           <div>
             <PlantTable />

@@ -39,7 +39,9 @@ class EditGarden extends Component {
         <h3>Update</h3>
 
         <form>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">
+            Name:
+          </label>
           <input
             id="name"
             type="text"
@@ -53,9 +55,9 @@ class EditGarden extends Component {
           this.setState({
             name: ''
           })
-        }}
-
-        >Submit</button>
+        }}>
+          Submit
+        </button>
       </div>
     )
   }

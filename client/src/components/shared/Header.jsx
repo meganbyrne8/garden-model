@@ -28,7 +28,7 @@ export default class Header extends Component {
 
           <div className="logo">
             <Link to='/'>
-              <h1>My Garden</h1>
+              <h2>Garden Modeling</h2>
             </Link>
           </div>
 
@@ -39,7 +39,7 @@ export default class Header extends Component {
               this.props.currentUser
                 ?
                 <>
-                  <button onClick={this.props.handleLogOut}>Logout</button>
+                  <Link to='/' onClick={this.props.handleLogOut}>Logout</Link>
                 </>
                 :
                 <Link to='/user/login'>Sign In</Link>

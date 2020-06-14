@@ -32,8 +32,10 @@ export default class Nursery extends Component {
         <div className="nursery-parent-div">
           <h2>This is the Nursery!</h2>
         </div>
-        <div className="nursery-card">
-          {populatePlants}
+        <div className="nursery-card-parent">
+          <div className="nursery-card">
+            {populatePlants}
+          </div>
         </div>
       </>
     )

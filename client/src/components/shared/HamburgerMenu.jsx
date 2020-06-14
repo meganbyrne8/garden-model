@@ -11,21 +11,23 @@ export default class HamburgerMenu extends Component {
   render() {
     return (
       <>
-        <Burger
-          onClick={() => this.setState({ active: !this.state.active })}
-          active={this.state.active}
-          burger="spin"
-          color="#AD2E74"
-          hoverOpacity={0.8}
-          scale={1.2}
-          margin={0}
-        />
+        <div>
+          <Burger
+            onClick={() => this.setState({ active: !this.state.active })}
+            active={this.state.active}
+            burger="spin"
+            color="#AD2E74"
+            hoverOpacity={0.8}
+            scale={1.2}
+            margin={0}
+          />
+        </div>
         {
           this.state.active
             ?
             <div
               onClick={() => this.setState({ menuActive: !this.state.menuActive })}
-              className="burger-menu"
+              className='burger-menu-comp'
             >
               <Link to='/plants'>
                 <h4>The Nursery</h4>

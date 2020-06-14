@@ -7,7 +7,7 @@ export default class AccountBubble extends Component {
     return (
       <div>
         <Link to='/myAccount'>
-          <button className="account-button">M</button>
+          <button className="account-button">Home</button>
         </Link>
       </div>
     )

@@ -1,11 +1,12 @@
-
-
 @media only screen and (min-width: 375px) and (max-width: 550px){
-  .burger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 0px 40px 10px 0px;
+  h4 {
+    padding: 10px;
+  }
+  
+  .burger-menu-comp {
+    text-align: right;
+    margin: 10px;
+    padding: 5px;
   }
 
   .mobile-menu {
@@ -14,15 +15,14 @@
 }
 
 @media only screen and (min-width: 550px) and (max-width: 768px){
-  .burger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 0px 40px 10px 0px;
+  h4 {
+    padding: 5px;
   }
 
-  .mobile-menu {
-    margin: 5px;
+  .burger-menu-comp {
+    text-align: right;
+    margin: 10px;
+    padding: 5px;
   }
   
 }
