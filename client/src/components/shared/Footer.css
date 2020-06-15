@@ -10,10 +10,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background:linear-gradient(45deg,#7e329b,#b165cd,#a879ba);
   bottom: 0;
   width: 100%;
-  padding: 10px 0px;
-  background:linear-gradient(45deg,#7e329b,#b165cd,#a879ba);
+  padding: 20px 0px;
+  margin-top: 100px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 3000px){

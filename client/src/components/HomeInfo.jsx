@@ -14,6 +14,9 @@ export default class HomeInfo extends Component {
         </div>
         <div className='home-image-div'>
           <img src={'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'} />
+          <span>Photo Credit:
+           <a href='https://unsplash.com/@markusspiske'> Markus Spiske</a>
+          </span>
         </div>
       </div>
     )

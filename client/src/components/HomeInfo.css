@@ -27,6 +27,14 @@
     padding: 10px 0 10px 10px;
   }
 
+  .home-image-div span {
+    font-size: 12px;
+    font-style: italic;
+    color: #1e1123;
+    padding-left: 10px;
+    margin: 0;
+  }
+
 
 }
 @media only screen and (min-width: 659px) and (max-width: 768px){
@@ -57,6 +65,13 @@
       object-fit: scale-down;
       padding: 10px 0px 10px 10px;
     }
+
+    .home-image-div span {
+      font-size: 12px;
+      font-style: italic;
+      color: #1e1123;
+      padding: 0 10px 10px 0; 
+    }
   
   }
 
@@ -80,6 +95,13 @@
       max-height: 300px;
       padding: 10px;
       object-fit: scale-down;
+    }
+
+    .home-image-div span {
+      font-size: 12px;
+      font-style: italic;
+      color: #1e1123;
+      padding: 0 10px 10px 0; 
     }
     
 } 
