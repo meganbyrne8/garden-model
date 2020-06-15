@@ -13,17 +13,26 @@
   }
   
   .home-image-div {
-    margin: 20px;
-    width: 50%;
+    margin: 15px;
+    border: 5px solid white;
+    width: 40%;
     overflow: hidden;
   }
 
   .home-image-div img {
     display: flex;
-    margin: 0 auto;
-    max-width: 300px;
-    max-height: 300px;
-    padding: 10px;
+    max-height: 400px;
+    object-fit: scale-down;
+    overflow: hidden;
+    padding: 10px 0 10px 10px;
+  }
+
+  .home-image-div span {
+    font-size: 12px;
+    font-style: italic;
+    color: #1e1123;
+    padding-left: 10px;
+    margin: 0;
   }
 
 
@@ -39,7 +48,7 @@
       display: flex;
       flex-direction: column;
       width: 50%;
-      margin: 20px;
+      margin: 0 2%;
     }
     
     .home-image-div {
@@ -51,9 +60,17 @@
     .home-image-div img {
       display: flex;
       margin: 0 auto;
-      max-width: 300px;
-      max-height: 300px;
-      padding: 10px;
+      max-height: 400px;
+      overflow: hidden;
+      object-fit: scale-down;
+      padding: 10px 0px 10px 10px;
+    }
+
+    .home-image-div span {
+      font-size: 12px;
+      font-style: italic;
+      color: #1e1123;
+      padding: 0 10px 10px 0; 
     }
   
   }
@@ -64,6 +81,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 8%;
     }
     
     .home-image-div {
@@ -74,10 +92,18 @@
     }
 
     .home-image-div img {
-      max-width: 300px;
       max-height: 300px;
       padding: 10px;
+      object-fit: scale-down;
     }
+
+    .home-image-div span {
+      font-size: 12px;
+      font-style: italic;
+      color: #1e1123;
+      padding: 0 10px 10px 0; 
+    }
+    
 } 
 
 

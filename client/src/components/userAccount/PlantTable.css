@@ -1,16 +1,29 @@
-.plant-form {
-  background-color: lightgray;
-  overflow: hidden;
-  overflow-y: scroll;
-  max-height: 900px;
+table {
+  border-collapse: collapse;
 }
 
-.plant-div-item {
-  padding: 5px;
-  background-color: gray;
+thead {
+  width: 100;
 }
 
-.plant-div-item-even {
-  padding: 5px;
-  background-color: lightgray;
+th, td {
+  border: 1.5px solid darkgray;
+  text-align: left;
+  padding: 5px 15px 5px 5px;
+}
+
+tbody {
+  width: 100%;
+}
+
+.plant-table-div {
+  width: 100%;
+}
+
+.plant-table {
+  width: 100%;
+}
+
+.plant-table-even {
+  background: lightgray;
 }

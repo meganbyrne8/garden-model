@@ -16,7 +16,7 @@ export default class Footer extends Component {
             backgroundColor="rgba(186,121,139,1)"
             iconSize="5"
             roundness="50%"
-            url="https://some-website.com/my-social-media-url"
+            url="https://www.linkedin.com/in/megan-j-byrne/"
             size="35" />
         </div>
         <div className="social-media-icons">
@@ -29,7 +29,7 @@ export default class Footer extends Component {
             backgroundColor="rgba(186,121,139,1)"
             iconSize="5"
             roundness="50%"
-            url="https://some-website.com/my-social-media-url"
+            url="https://twitter.com/_mbyrne"
             size="35" />
         </div>
         <div className="social-media-icons">
@@ -42,7 +42,7 @@ export default class Footer extends Component {
             backgroundColor="rgba(186,121,139,1)"
             iconSize="5"
             roundness="50%"
-            url="https://some-website.com/my-social-media-url"
+            url="https://github.com/meganbyrne8"
             size="35" />
         </div>
       </footer>

@@ -16,7 +16,8 @@ import EditGarden from "./userAccount/EditGarden"
 
 export default class Home extends Component {
   state = {
-    gardens: []
+    gardens: [],
+    isLoading: false
   }
 
   async componentDidMount() {
@@ -80,12 +81,13 @@ export default class Home extends Component {
                   <MyGarden
                     currentUser={this.props.currentUser}
                     deleteGarden={this.deleteGarden}
+                    isLoading={this.state.isLoading}
                   />
                 </Route>
               </>
               :
               <Route exact path='/myAccount'>
-                <h2>This page is for users only. Please login or signup to see this page.</h2>
+                <h4>You may not have acess to see this page. Please login to see this page. If this problem persists, please reach out to our team.</h4>
               </Route>
           }
 

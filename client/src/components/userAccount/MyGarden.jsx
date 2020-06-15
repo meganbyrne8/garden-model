@@ -22,6 +22,7 @@ export default class MyGarden extends Component {
   render() {
     const { gardens } = this.state
     const { currentUser, deleteGarden } = this.props
+
     return (
 
       <div className="garden-parent-div">
