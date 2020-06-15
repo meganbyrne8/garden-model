@@ -2,36 +2,70 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin: 5% 1%;
+  margin: 1% 1%;
 }
 
 .info-div-about {
   display: flex;
   flex-direction: column;
+  align-items: baseline;
   width: 50%;
   margin: 20px;
+}
+
+.info-div-about img {
+  max-height: 250px;
+  object-fit: contain;
+  overflow: hidden;
+  margin: 10px 0 10px 0;
+}
+
+.info-div-about p {
+  margin: 10px 70px 10px 0;
 }
 
 .about-team {
   display: flex;
   flex-direction: column;
-  width: 50%
+  width: 40%;
+  margin: 20px 0 20px 20px;
 }
 
 .about-team-div {
-  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 10px;
 }
 
 .about-team-div img {
   max-width: 100px;
   max-height: 100px;
+  border: 2px solid white;
+  border-radius: 50%;
 }
+
+.about-team-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-team-info h4 {
+  padding: 0;
+  margin: 5px;
+}
+
+.about-team-info p {
+  padding: 0;
+  margin: 5px;
+  }
 }
 
 @media only screen and (min-width: 659px) and (max-width: 768px){
   .parent-div-about-info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     margin: 5% 1%;
   }
@@ -39,14 +73,25 @@
   .info-div-about {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    align-items: center;
+    width: 90%;
+    margin: 0 20px 0 20px;
+  }
+
+  .info-div-about img {
+    max-height: 250px;
+    object-fit: contain;
+    overflow: hidden;
+    margin: 10px 0 10px 0;
   }
 
   .about-team {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    align-items: center;
+    width: 90%;
   }
+
   .about-team-div {
     margin: 5%;
   }
@@ -89,8 +134,16 @@
   .info-div-about {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    text-align: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 20px 0 20px;
+  }
+
+  .info-div-about img {
+    max-height: 250px;
+    object-fit: contain;
+    overflow: hidden;
+    margin: 10px 0 10px 0;
   }
 
   .about-team {
