@@ -12,7 +12,8 @@
 }
 
 .sign-in-form input {
-  padding: .5% 4%;
+  height: 25px;
+  width: 250px;
   border-radius: 3px;
   border: 1px solid #d4bcdd;
 }

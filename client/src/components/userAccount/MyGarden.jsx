@@ -6,11 +6,15 @@ import './MyGarden.css'
 
 export default class MyGarden extends Component {
   state = {
-    gardens: []
+    gardens: [],
+    isLoading: false
   }
 
   async componentDidMount() {
     this.getGardens()
+    this.setState({
+      isLoading: true
+    })
   }
 
   getGardens = async () => {
@@ -20,8 +24,16 @@ export default class MyGarden extends Component {
 
 
   render() {
-    const { gardens } = this.state
+    const { gardens, isLoading } = this.state
     const { currentUser, deleteGarden } = this.props
+
+    if (isLoading) {
+      this.getGardens()
+      this.setState({
+        isLoading: false
+      })
+    }
+
     return (
 
       <div className="garden-parent-div">
