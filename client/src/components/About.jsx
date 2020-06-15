@@ -8,7 +8,7 @@ export default class About extends Component {
 
         <div className='info-div-about'>
           <h3>What is My Garden?</h3>
-          <img src={'https://images.unsplash.com/photo-1507484467459-0c01be16726e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'} />
+          <img src={'https://images.unsplash.com/photo-1507484467459-0c01be16726e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'} alt="various plants" />
           <span>Photo Credit:
            <a href='https://unsplash.com/@markusspiske'> Markus Spiske</a>
           </span>
@@ -23,7 +23,10 @@ export default class About extends Component {
           <h3>Our Team</h3>
           <div className='about-team-div'>
             <div className='about-team-image'>
-              <img src={'https://avatars1.githubusercontent.com/u/52892348?s=460&u=11ac10651634a843d1915c80f35da02ea416517d&v=4'} />
+              <img
+                src={'https://avatars1.githubusercontent.com/u/52892348?s=460&u=11ac10651634a843d1915c80f35da02ea416517d&v=4'}
+                alt="staff photo"
+              />
             </div>
             <div className='about-team-info'>
               <h4>Megan Byrne</h4>
@@ -34,7 +37,10 @@ export default class About extends Component {
 
           <div className='about-team-div'>
             <div className='about-team-image'>
-              <img src={'https://avatars1.githubusercontent.com/u/52892348?s=460&u=11ac10651634a843d1915c80f35da02ea416517d&v=4'} />
+              <img
+                src={'https://avatars1.githubusercontent.com/u/52892348?s=460&u=11ac10651634a843d1915c80f35da02ea416517d&v=4'}
+                alt="staff photo"
+              />
             </div>
             <div className='about-team-info'>
               <h4>Megan Byrne</h4>
@@ -45,7 +51,10 @@ export default class About extends Component {
 
           <div className='about-team-div'>
             <div className='about-team-image'>
-              <img src={'https://avatars1.githubusercontent.com/u/52892348?s=460&u=11ac10651634a843d1915c80f35da02ea416517d&v=4'} />
+              <img
+                src={'https://avatars1.githubusercontent.com/u/52892348?s=460&u=11ac10651634a843d1915c80f35da02ea416517d&v=4'}
+                alt="staff photo"
+              />
             </div>
             <div className='about-team-info'>
               <h4>Megan Byrne</h4>

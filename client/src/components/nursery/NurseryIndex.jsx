@@ -29,11 +29,11 @@ export default class NurseryIndex extends Component {
     return (
       <div className="nursery-index-parent">
         <div className="nursery-index-image">
-          <img src={this.state.imageurl} />
+          <img src={this.state.imageurl} alt="various plants" />
         </div>
         <div className="nursery-index-info">
           <h3>{this.state.name}</h3>
-          <p>{this.state.genus}</p>
+          <p className="genus">{this.state.genus}</p>
           <p>{this.state.description}</p>
           <p>{this.state.plantingnotes}</p>
         </div>

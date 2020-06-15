@@ -9,6 +9,7 @@
   width: 60%;
   display: flex;
   justify-content: center;
+  padding-right: 10px;
 }
 
 .nursery-index-image img {
@@ -29,6 +30,10 @@
   margin: 3% 0 1% 0;
 }
 
+.genus {
+  font-style: italic;
+}
+
 @media only screen and (min-width: 659px) and (max-width: 768px){
   .nursery-index-parent {
     display: flex;
@@ -39,11 +44,17 @@
 
   .nursery-index-image {
     display: flex;
-    margin: 0 auto;
+    padding-right: 10px;
+    width: 60%;
+  }
+
+  .nursery-index-image img {
+    overflow: hidden;
+    object-fit: cover;
   }
 
   .nursery-index-info {
-    width: 70%;
+    width: 40%;
     margin: 0 auto;
   }
 }
@@ -58,12 +69,20 @@
 
   .nursery-index-image {
     display: flex;
-    margin: 0 auto;
+    align-self: center;
+  }
+
+  .nursery-index-image img {
+    overflow: hidden;
+    object-fit: cover;
   }
 
   .nursery-index-info {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     width: 70%;
-    margin: 0 auto;
+    
   }
 }
 
