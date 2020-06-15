@@ -103,14 +103,16 @@ src
       |__ userAuth/
         |__ SignUp.jsx
         |__ SignIn.jsx
-        |__ SignOut.jsx
+        |__ SignUp.css
+        |__ SignIn.css
       |__ userAccount/
         |__ MyGarden.jsx
         |__ AddGarden.jsx
         |__ EditGarden.jsx
-        |__ AddPlant.jsx
-        |__ EditPlant.jsx
+        |__ PlantTable.jsx
       |__ Home.jsx
+      |__ HomeInfo.jsx
+      |__ About.jsx
 
 ```
 
