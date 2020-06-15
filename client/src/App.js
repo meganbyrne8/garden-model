@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Home from "./components/Home"
 import HamburgerMenu from './components/shared/HamburgerMenu'
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth'
+import './App.css'
 
 export default class App extends Component {
   state = {
