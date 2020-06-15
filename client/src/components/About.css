@@ -24,6 +24,13 @@
   margin: 10px 70px 10px 0;
 }
 
+.info-div-about span {
+  font-size: 12px;
+  font-style: italic;
+  color: #1e1123;
+  padding: 0 10px 10px 0; 
+}
+
 .about-team {
   display: flex;
   flex-direction: column;
@@ -33,6 +40,7 @@
 
 .about-team-div {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -83,6 +91,13 @@
     object-fit: contain;
     overflow: hidden;
     margin: 10px 0 10px 0;
+  }
+
+  .info-div-about span {
+    font-size: 12px;
+    font-style: italic;
+    color: #1e1123;
+    padding: 0 10px 10px 0; 
   }
 
   .about-team {
@@ -144,6 +159,13 @@
     object-fit: contain;
     overflow: hidden;
     margin: 10px 0 10px 0;
+  }
+
+  .info-div-about span {
+    font-size: 12px;
+    font-style: italic;
+    color: #1e1123;
+    padding: 0 10px 10px 0; 
   }
 
   .about-team {

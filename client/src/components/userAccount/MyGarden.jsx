@@ -6,15 +6,11 @@ import './MyGarden.css'
 
 export default class MyGarden extends Component {
   state = {
-    gardens: [],
-    isLoading: false
+    gardens: []
   }
 
   async componentDidMount() {
     this.getGardens()
-    this.setState({
-      isLoading: true
-    })
   }
 
   getGardens = async () => {
@@ -24,15 +20,8 @@ export default class MyGarden extends Component {
 
 
   render() {
-    const { gardens, isLoading } = this.state
+    const { gardens } = this.state
     const { currentUser, deleteGarden } = this.props
-
-    if (isLoading) {
-      this.getGardens()
-      this.setState({
-        isLoading: false
-      })
-    }
 
     return (
 
