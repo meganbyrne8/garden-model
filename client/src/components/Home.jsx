@@ -57,40 +57,37 @@ export default class Home extends Component {
         handleLogOut={this.props.handleLogOut}
       >
         <>
-          <header>
-            <Route exact path='/user/login'
-              render={(props) => (
-                <SignIn
-                  {...props}
-                  handleLoginSubmit={this.props.handleLoginSubmit} />
-              )}
-            />
-            <Route path='/user/signup'
-              render={(props) => (
-                <SignUp
-                  {...props}
-                  handleSignUpSubmit={this.props.handleSignUpSubmit} />
-              )}
-            />
-            <Route exact path='/plants' component={Nursery} />
-            {
-              this.props.currentUser
-                ?
-                <>
-                  <AccountBubble currentUser={this.props.currentUser} />
-                  <Route exact path='/myAccount'>
-                    <MyGarden
-                      currentUser={this.props.currentUser}
-                      deleteGarden={this.deleteGarden}
-                    />
-                  </Route>
-                </>
-                :
+          <Route exact path='/user/login'
+            render={(props) => (
+              <SignIn
+                {...props}
+                handleLoginSubmit={this.props.handleLoginSubmit} />
+            )}
+          />
+          <Route path='/user/signup'
+            render={(props) => (
+              <SignUp
+                {...props}
+                handleSignUpSubmit={this.props.handleSignUpSubmit} />
+            )}
+          />
+          <Route exact path='/plants' component={Nursery} />
+          {
+            this.props.currentUser
+              ?
+              <>
                 <Route exact path='/myAccount'>
-                  <h2>This page is for users only. Please login or signup to see this page.</h2>
+                  <MyGarden
+                    currentUser={this.props.currentUser}
+                    deleteGarden={this.deleteGarden}
+                  />
                 </Route>
-            }
-          </header>
+              </>
+              :
+              <Route exact path='/myAccount'>
+                <h2>This page is for users only. Please login or signup to see this page.</h2>
+              </Route>
+          }
 
           <Route exact path='/plants/:id' component={NurseryIndex} />
           <Route exact path='/about' component={About} />
@@ -117,7 +114,6 @@ export default class Home extends Component {
               />
             }}
           />
-
 
         </>
       </Layout>

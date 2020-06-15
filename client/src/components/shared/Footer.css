@@ -1,9 +1,41 @@
+* {
+  font-family: 'Montserrat';
+  text-decoration: none;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap);
+
 .footer-div {
-  background-color:#99CC99;
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
   justify-content: center;
+  bottom: 0;
+  width: 100%;
   padding: 10px 0px;
+  background:linear-gradient(45deg,#7e329b,#b165cd,#a879ba);
 }
+
+@media only screen and (min-width: 768px) and (max-width: 3000px){
+
+  .social-media-icons {
+    padding: 0 10px;
+  }
+
+
+}
+@media only screen and (min-width: 659px) and (max-width: 768px){
+
+  .social-media-icons {
+    padding: 0 10px;
+  }
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 659px){
+
+  .social-media-icons {
+    padding: 0 10px;
+  }
+  
+  }

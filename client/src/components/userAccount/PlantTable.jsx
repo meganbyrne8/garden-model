@@ -1,23 +1,33 @@
 import React, { Component } from 'react'
+import './PlantTable.css'
 
 export default class PlantTable extends Component {
   render() {
     return (
-      <form>
-        <h3>
-          hello
-        </h3>
-        <label>
-
-          <p>Rosemary Bush</p>
-          <p>Dahlia</p>
-          <p>Texas Bluebells</p>
-          <p>Snapdragon</p>
-          <p>Peonies</p>
-          <p>Hibiscus Flower</p>
-
-        </label>
-      </form>
+      <div className="plant-form">
+        <form>
+          <label>
+            <div className="plant-div-item">
+              <p>Rosemary Bush</p>
+            </div>
+            <div className="plant-div-item-even">
+              <p>Dahlia</p>
+            </div>
+            <div className="plant-div-item">
+              <p>Texas Bluebells</p>
+            </div>
+            <div className="plant-div-item-even">
+              <p>Snapdragon</p>
+            </div>
+            <div className="plant-div-item">
+              <p>Peonies</p>
+            </div>
+            <div className="plant-div-item-even">
+              <p>Hibiscus Flower</p>
+            </div>
+          </label>
+        </form>
+      </div>
     )
   }
 }

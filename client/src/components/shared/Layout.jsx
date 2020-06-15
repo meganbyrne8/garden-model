@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from "./Header"
 import Footer from "./Footer";
+import AccountBubble from "./AccountBubble"
 
 export default function Layout(props) {
   return (
@@ -10,6 +11,12 @@ export default function Layout(props) {
         handleLogOut={props.handleLogOut}
       />
       <div className="samplediv">
+        {
+          props.currentUser ?
+            <AccountBubble />
+            :
+            <></>
+        }
         {props.children}
       </div>
       <Footer />

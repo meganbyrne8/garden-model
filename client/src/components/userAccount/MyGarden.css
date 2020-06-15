@@ -1,13 +1,179 @@
-.garden-parent-div {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+@media only screen and (min-width: 768px) and (max-width: 3000px){
+  .garden-parent-div {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .title-section-garden-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .title-section-garden-page h3 {
+    margin: 10px 30px 10px 0;
+  }
+  
+  .y-axis {
+    width: 20%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-left: 1px solid black;
+  }
+  
+  .gardens-mapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .edit-delete-buttons span {
+    margin: 5px;
+  }
+  
+  .x-axis {
+    width: 70%;
+    margin-left: 5%;
+  }
+
+  .x-axis h3 {
+    margin: 10px 30px 10px 0;
+  }
+
+  .x-axis-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .x-axis-edit-delete span {
+    margin: 5px;
+  }
+
+  .plant-table-div {
+    margin-top: 5%;
+    width: 80%
+  }
+
 }
 
-.y-axis {
-  width: 30%;
+@media only screen and (min-width: 659px) and (max-width: 768px){
+  .garden-parent-div {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title-section-garden-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .title-section-garden-page h3 {
+    margin: 10px 30px 10px 0;
+  }
+  
+  .y-axis {
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .gardens-mapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .edit-delete-buttons span {
+    margin: 5px;
+  }
+  
+  .x-axis {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .x-axis h3 {
+    margin: 10px 30px 10px 0;
+  }
+
+  .x-axis-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .x-axis-edit-delete span {
+    margin: 5px;
+  }
 }
 
-.x-axis {
-  width: 70%;
+@media only screen and (min-width: 300px) and (max-width: 659px){
+  .garden-parent-div {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title-section-garden-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .title-section-garden-page h3 {
+    margin: 10px 30px 10px 0;
+  }
+  
+  .y-axis {
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .gardens-mapped {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .edit-delete-buttons span {
+    margin: 5px;
+  }
+  
+  .x-axis {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .x-axis h3 {
+    margin: 10px 30px 10px 0;
+  }
+
+  .x-axis-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .x-axis-edit-delete span {
+    margin: 5px;
+  }
 }

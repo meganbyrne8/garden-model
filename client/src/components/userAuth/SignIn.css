@@ -1,0 +1,48 @@
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+  margin: 10% 0 20% 0;
+}
+
+.sign-in-form label {
+  padding: 15px;
+}
+
+.sign-in-form input {
+  padding: .5% 4%;
+  border-radius: 3px;
+  border: 1px solid #d4bcdd;
+}
+
+.sign-in-form a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.sign-in-form button {
+  height: 35px;
+  width: 175px;
+  margin-top: 5%;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: 
+    linear-gradient(
+      45deg, 
+    rgba(255, 255, 255, 1) 0%, 
+    rgba(212,188,221,1) 25%, 
+    rgba(169,120,187,1) 51%, 
+    rgba(188,69,136,1) 100%);
+  }
+
+
+
+
+/* gradient source code here: https://codepen.io/egrucza/pen/yyWGbN */

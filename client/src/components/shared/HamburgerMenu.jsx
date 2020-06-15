@@ -16,7 +16,7 @@ export default class HamburgerMenu extends Component {
             onClick={() => this.setState({ active: !this.state.active })}
             active={this.state.active}
             burger="spin"
-            color="#AD2E74"
+            color="#ffffff"
             hoverOpacity={0.8}
             scale={1.2}
             margin={0}
