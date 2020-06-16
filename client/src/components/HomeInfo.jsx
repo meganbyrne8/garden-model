@@ -6,7 +6,7 @@ export default class HomeInfo extends Component {
     return (
       <div className="parent-div-home-info">
         <div className='info-div-home'>
-          <h3>What is My Garden?</h3>
+          <h3>What is Garden Modeling?</h3>
           <p>Garden Modeling is a site that allows users to make better decisions when planning out their gardens. Keeping track of requirements for each individual seed or bulb can be time consuming and irritating, but with Garden Modeling, users can store all of that information in one place.
             <br />
             <br />
