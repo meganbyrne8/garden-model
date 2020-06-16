@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  background:linear-gradient(45deg,#7e329b,#b165cd,#a879ba);
+  background: linear-gradient(45deg, #7e329b, #b165cd, #a879ba);
   padding: 15px 0 15px 0;
 }
 
