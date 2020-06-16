@@ -150,7 +150,7 @@ src
 | AddGarden |    H     |     5 hrs      |     4hrs     |     4hrs     |
 | EditGarden |    H     |     6 hrs      |     7hrs     |     7hrs     |
 | Styling for CRUD Elements |    L     |     6 hrs      |     10 hrs     |     10hrs     |
-| TOTAL               |          |     TK     |     TK      |     TK     |
+| TOTAL               |          |          |     67.5      |     67.5    |
 
 
 <br>
