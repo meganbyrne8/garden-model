@@ -42,7 +42,7 @@ export default class Footer extends Component {
             backgroundColor="rgba(163,38,204,1)"
             iconSize="5"
             roundness="50%"
-            url="https://github.com/meganbyrne8"
+            url="https://github.com/meganbyrne8/garden-model"
             size="35" />
         </div>
       </footer>
