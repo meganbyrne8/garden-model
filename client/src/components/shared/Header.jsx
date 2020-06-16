@@ -10,8 +10,6 @@ export default class Header extends Component {
   }
 
   openMenu = () => {
-    // can I pass in a screensize as a jsx element
-    // is there a way to base this on a media query? Like a screen size? 
     this.setState({
       isOpen: !this.state.isOpen
     })
