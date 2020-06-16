@@ -59,3 +59,5 @@ export default class HamburgerMenu extends Component {
     );
   }
 }
+
+// Citing code for the hamburger menu: https://github.com/mattvox/react-css-burger
