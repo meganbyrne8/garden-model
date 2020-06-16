@@ -15,8 +15,6 @@
   - [Server (Back End)](#server-back-end)
     - [ERD Model](#erd-model)
 - [Post-MVP](#post-mvp)
-- [Code Showcase](#code-showcase)
-- [Code Issues & Resolutions](#code-issues--resolutions)
 
 <br>
 
@@ -48,6 +46,8 @@ _The **Garden Modeling** MVP will allow users to create accounts, save items to 
 |      React       | _To build out and create a front end for this app._ |
 |   React Router   | _To be able to create routes and leverage already created apps built by Rails._ |
 |   Ruby on Rails  | _To create server (API, routes, controllers, models) via Rails._ |
+|   Burger React  | _Creates animated hamburger menu for mobile breakpoints._ |
+|   SocialMediaIconsReact  | _Imports social media icons as React components to the footer._ |
 
 <br>
 
@@ -86,10 +86,6 @@ _The **Garden Modeling** MVP will allow users to create accounts, save items to 
 
 ``` structure
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
 |__ components/
       |__ shared/
         |__ Layout.jsx
@@ -103,8 +99,6 @@ src
       |__ userAuth/
         |__ SignUp.jsx
         |__ SignIn.jsx
-        |__ SignUp.css
-        |__ SignIn.css
       |__ userAccount/
         |__ MyGarden.jsx
         |__ AddGarden.jsx
@@ -114,6 +108,7 @@ src
       |__ HomeInfo.jsx
       |__ About.jsx
 
+
 ```
 
 #### Component Breakdown
@@ -121,41 +116,40 @@ src
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
 |    Layout   | functional |   n   |   y   | _The layout component will inherit all shared elements and export those elements to all pages, essentially wrapping the components with a shared layout in mind._               |
-|    Header   | functional |   n   |   n   | _The header will have all relevent navigation links._       |
+|    Header   | functional |   y   |   y   | _The header will have all relevent navigation links._       |
 |    Footer   |   class    |   n   |   n   | _The footer will have all relevant attribution and media links._      |
-|     Home    | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Nursery  | functional |   y   |   n   | _The Nursery component will act as a home for all Nursery items that are passed in as cards from the API._ |
-|    NurseryCard   | functional |   n   |   y   | _The cards will render the post info via props._ |
-|    NurseryIndex    | functional |   n   |   y   | _The nursery index will have all items in the database listed alphabetically so that users can browse through items._ |
-|    MyGarden    | functional |   y   |   y   | _This component will allow users to view their saved items._ |
-|    AddGarden    | functional |   y   |   y   | _This component will allow users to add a new garden._ |
-|    EditGarden   | functional |   y   |   y   | _This component will allow users to add new items to their garden, change the name of their garden, or add any relevant notes._ |
-|    AccountBubble   | functional |   y   |   y   | _This component will display a greeting or indication to users who do have accounts and will direct them to navigate into their own accounts._       |
-|    SignUp   | functional |   y   |   n   | _This component will allow the user to sign up._ |
-|    SignIn   | functional |   y   |   n   | _This component will allow the user to sign in._ |
-|    SignOut   | functional |   y   |   n   | _This componenet will allow the user to sign out._ |
+|     Home    | class |   y   |   y   | _The cards will render the post info via props._                 |
+|    Nursery  | class |   y   |   n   | _The Nursery component will act as a home for all Nursery items that are passed in as cards from the API._ |
+|    NurseryCard   | class |   y   |   y   | _The cards will render the post info via props._ |
+|    NurseryIndex    | class |   y   |   y   | _The nursery index will have all items in the database listed alphabetically so that users can browse through items._ |
+|    MyGarden    | class |   y   |   y   | _This component will allow users to view their saved items._ |
+|    AddGarden    | class |   y   |   y   | _This component will allow users to add a new garden._ |
+|    EditGarden   | class |   y   |   y   | _This component will allow users to add new items to their garden, change the name of their garden, or add any relevant notes._ |
+|    AccountBubble   | class |   n   |   n   | _This component will display a greeting or indication to users who do have accounts and will direct them to navigate into their own accounts._       |
+|    SignUp   | class |   y   |   y   | _This component will allow the user to sign up._ |
+|    SignIn   | class|   y   |   y   | _This component will allow the user to sign in._ |
+|    HamburgerMenu.jsx   | class |   y   |   y   | _This componenet will host the react library code for an animated hamburger menu(comes with citations)._ |
 
 
 #### Component Estimates
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Header    |    L     |     3 hrs      |     TK hrs     |    TK    |
-| Footer |    L     |     3 hrs      |     TK hrs     |     TK     |
-| Layout |    H     |     2 hrs      |     TK hrs     |     TK     |
-| Styling for Layout |    L     |     4 hrs      |     TK hrs     |     TK     |
-| Home |    H     |     4 hrs      |     TK hrs     |     TK     |
-| Nursery |    M     |     6 hrs      |     TK hrs     |     TK     |
-| NurseryCard |    H     |     5 hrs      |     TK hrs     |     TK     |
-| NurseryIndex |    M     |     4 hrs      |     TK hrs     |     TK     |
-| Styling for Home Elements |    L     |     8 hrs      |     TK hrs     |     TK     |
-| Create CRUD Actions for UserGarden |    H     |     6 hrs      |     TK hrs     |     TK     |
-| Auth (Sign In, Up, Out)   |    H     |     4 hrs      |     TK hrs     |    TK    |
-| Account Bubble   |    M     |     4 hrs      |     TK hrs     |    TK    |
-| MyGarden |    H     |     5 hrs      |     TK hrs     |     TK     |
-| AddGarden |    H     |     5 hrs      |     TK hrs     |     TK     |
-| EditGarden |    H     |     6 hrs      |     TK hrs     |     TK     |
-| Styling for CRUD Elements |    L     |     6 hrs      |     TK hrs     |     TK     |
+| Header    |    L     |     3 hrs      |     4hrs    |    4hrs    |
+| Footer |    L     |     3 hrs      |     2hrs     |     2hrs     |
+| Layout |    H     |     2 hrs      |     1hr     |     1hr     |
+| Home |    H     |     4 hrs      |     5 hrs     |     5hrs     |
+| Nursery |    M     |     6 hrs      |     7hrs hrs     |     7hrs    |
+| NurseryCard |    H     |     5 hrs      |     1.5 hrs     |     1.5hrs     |
+| NurseryIndex |    M     |     4 hrs      |     3hrs hrs     |     3hrs     |
+| Styling for Home Elements |    L     |     8 hrs      |     6hrs     |     6hrs     |
+| Create CRUD Actions for UserGarden |    H     |     6 hrs      |     4 hrs     |     4hrs     |
+| Auth (Sign In, Up, Out)   |    H     |     4 hrs      |     6 hrs     |    6hrs    |
+| Account Bubble   |    M     |     1 hr      |     1 hr     |    1hr    |
+| MyGarden |    H     |     5 hrs      |     6hrs     |     6hrs     |
+| AddGarden |    H     |     5 hrs      |     4hrs     |     4hrs     |
+| EditGarden |    H     |     6 hrs      |     7hrs     |     7hrs     |
+| Styling for CRUD Elements |    L     |     6 hrs      |     10 hrs     |     10hrs     |
 | TOTAL               |          |     TK     |     TK      |     TK     |
 
 
@@ -183,10 +177,3 @@ src
 
 ***
 
-## Code Showcase
-
-> TK
-
-## Code Issues & Resolutions
-
-> TK

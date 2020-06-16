@@ -64,6 +64,7 @@ export default class Home extends Component {
                 handleLoginSubmit={this.props.handleLoginSubmit} />
             )}
           />
+
           <Route path='/user/signup'
             render={(props) => (
               <SignUp
@@ -71,6 +72,7 @@ export default class Home extends Component {
                 handleSignUpSubmit={this.props.handleSignUpSubmit} />
             )}
           />
+
           <Route exact path='/plants' component={Nursery} />
           {
             this.props.currentUser
