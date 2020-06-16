@@ -9,7 +9,6 @@ import NurseryIndex from "./nursery/NurseryIndex"
 import HomeInfo from "./HomeInfo"
 import About from "./About"
 import MyGarden from "./userAccount/MyGarden"
-import AccountBubble from "./shared/AccountBubble"
 import AddGarden from "./userAccount/AddGarden"
 import EditGarden from "./userAccount/EditGarden"
 

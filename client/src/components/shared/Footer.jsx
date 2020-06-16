@@ -8,12 +8,12 @@ export default class Footer extends Component {
       <footer className="footer-div">
         <div className="social-media-icons">
           <SocialMediaIconsReact
-            borderColor="rgba(255,255,255,1)"
+            borderColor="rgba(67,38,77,1)"
             borderWidth="5"
             borderStyle="double"
             icon="linkedin"
             iconColor="rgba(255,255,255,1)"
-            backgroundColor="rgba(186,121,139,1)"
+            backgroundColor="rgba(163,38,204,1)"
             iconSize="5"
             roundness="50%"
             url="https://www.linkedin.com/in/megan-j-byrne/"
@@ -21,12 +21,12 @@ export default class Footer extends Component {
         </div>
         <div className="social-media-icons">
           <SocialMediaIconsReact
-            borderColor="rgba(255,255,255,1)"
+            borderColor="rgba(67,38,77,1)"
             borderWidth="5"
             borderStyle="double"
             icon="twitter"
             iconColor="rgba(255,255,255,1)"
-            backgroundColor="rgba(186,121,139,1)"
+            backgroundColor="rgba(163,38,204,1)"
             iconSize="5"
             roundness="50%"
             url="https://twitter.com/_mbyrne"
@@ -34,12 +34,12 @@ export default class Footer extends Component {
         </div>
         <div className="social-media-icons">
           <SocialMediaIconsReact
-            borderColor="rgba(255,255,255,1)"
+            borderColor="rgba(67,38,77,1)"
             borderWidth="5"
             borderStyle="double"
             icon="github"
             iconColor="rgba(255,255,255,1)"
-            backgroundColor="rgba(186,121,139,1)"
+            backgroundColor="rgba(163,38,204,1)"
             iconSize="5"
             roundness="50%"
             url="https://github.com/meganbyrne8"

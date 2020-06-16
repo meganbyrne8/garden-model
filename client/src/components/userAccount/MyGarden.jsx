@@ -45,9 +45,10 @@ export default class MyGarden extends Component {
                       currentUser && currentUser.id === garden.user_id && (
                         <div className="edit-delete-buttons">
                           <Link to={'/gardens/' + garden.id + '/edit'} >
-                            <span>&#9998;</span>
+                            <span alt="add icon">&#9998;</span>
                           </Link>
                           <span
+                            alt="delete icon"
                             onClick={() =>
                               deleteGarden(garden.id)
                             }>
@@ -67,8 +68,8 @@ export default class MyGarden extends Component {
           <div className="x-axis-title">
             <h3>My Plants</h3>
             <div className="x-axis-edit-delete">
-              <span>&#9998;</span>
-              <span>&#10133;</span>
+              <span alt="add icon">&#9998;</span>
+              <span alt="edit icon">&#10133;</span>
             </div>
           </div>
           <div className="plant-table-div">

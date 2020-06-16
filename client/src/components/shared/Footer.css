@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: center;
   background:linear-gradient(45deg,#7e329b,#b165cd,#a879ba);
+  position: sticky;
   bottom: 0;
   width: 100%;
   padding: 20px 0px;
