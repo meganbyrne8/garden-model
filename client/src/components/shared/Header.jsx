@@ -21,7 +21,7 @@ export default class Header extends Component {
 
   render() {
     return (
-      <div>
+      <div className='header-super-parent'>
         <div className="header-div">
 
           <div className="logo">

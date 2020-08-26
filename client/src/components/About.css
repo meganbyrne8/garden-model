@@ -1,4 +1,10 @@
-@media only screen and (min-width: 768px) and (max-width: 3000px){.parent-div-about-info {
+@media only screen and (min-width: 768px) and (max-width: 3000px){
+  .super-parent-div {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .parent-div-about-info {
   display: flex;
   flex-direction: row;
   width: 100%;

@@ -38,7 +38,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className='super-parent-div'>
         <Home
           handleLoginSubmit={this.handleLoginSubmit}
           handleSignUpSubmit={this.handleSignUpSubmit}
