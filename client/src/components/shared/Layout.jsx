@@ -10,7 +10,7 @@ export default function Layout(props) {
         currentUser={props.currentUser}
         handleLogOut={props.handleLogOut}
       />
-      <div className="samplediv" style={{height: `75vh`}}>
+      <div className="samplediv" style={{margin: `10em 0`}}>
         {
           props.currentUser ?
             <AccountBubble />
