@@ -11,7 +11,8 @@
   align-items: center;
   justify-content: center;
   background:linear-gradient(45deg,#7e329b,#b165cd,#a879ba);
-  height: 10vh;
+  position: fixed;
+  bottom: 0;
   width: 100%;
   padding: 10px 0px;
 }
