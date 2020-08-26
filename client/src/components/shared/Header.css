@@ -1,7 +1,3 @@
-.header-super-parent {
-  height: 15vh;
-}
-
 .header-div {
   display: flex;
   flex-direction: row;
