@@ -6,6 +6,7 @@ export default class Footer extends Component {
   render() {
     return (
       <footer className="footer-div">
+
         <div className="social-media-icons">
           <SocialMediaIconsReact
             borderColor="rgba(67,38,77,1)"
@@ -19,6 +20,7 @@ export default class Footer extends Component {
             url="https://www.linkedin.com/in/megan-j-byrne/"
             size="35" />
         </div>
+
         <div className="social-media-icons">
           <SocialMediaIconsReact
             borderColor="rgba(67,38,77,1)"
@@ -32,6 +34,7 @@ export default class Footer extends Component {
             url="https://twitter.com/_mbyrne"
             size="35" />
         </div>
+
         <div className="social-media-icons">
           <SocialMediaIconsReact
             borderColor="rgba(67,38,77,1)"
@@ -45,6 +48,7 @@ export default class Footer extends Component {
             url="https://github.com/meganbyrne8/garden-model"
             size="35" />
         </div>
+
       </footer>
     )
   }
